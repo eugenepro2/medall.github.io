@@ -99,8 +99,8 @@
 
 // TRANSITION
 
-=tr($what)
-  transition: $what
+=tr()
+  transition: all 0.3s
 
 =hide-text
   font: 0/0 a
@@ -110,6 +110,10 @@
 =hidetext
   +hide-text
 
+=center
+  display: flex
+  justify-content: center
+  align-items: center
 
 // IMPORTANT!!!! REQUIRES SPACES BETWEEN ELEMENTS, NO SUCH STUFF: </li><li>
 =justify
