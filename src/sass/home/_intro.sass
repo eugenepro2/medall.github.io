@@ -1,0 +1,37 @@
+.intro
+	background-image: url('../img/bg-intro.jpg')
+	background-size: cover
+	height: 560px
+	position: relative
+	overflow: hidden
+	&__text
+		color: $white
+		position: absolute
+		bottom: 70px
+		p
+			font-size: 26px
+		h2
+			font-size: 55.5px
+			line-height: 1.16
+			position: relative
+			&:before
+				content: ''
+				+s('arrow')
+				display: block
+				position: absolute
+				right: -210px
+				top: -150px
+	&__form
+		background: $white
+		padding: 45px 60px
+		margin-top: 50px
+		form
+			h3
+				font-size: 32px
+				margin-bottom: 35px
+				color: #3f3f3f
+			p
+				margin-top: 30px
+				@extend .roboto
+				font-size: 18.5px
+				color: $black-three

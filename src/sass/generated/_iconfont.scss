@@ -10,6 +10,7 @@
 }
 
 $icon-facebook: "\EA01";
+$icon-mail: "\EA02";
 
 
 %icon {
@@ -29,3 +30,4 @@ $icon-facebook: "\EA01";
 }
 
 .icon-facebook:before { content: $icon-facebook; }
+.icon-mail:before { content: $icon-mail; }
