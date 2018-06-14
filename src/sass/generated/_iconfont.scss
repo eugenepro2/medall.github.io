@@ -9,8 +9,19 @@
   font-style: normal;
 }
 
-$icon-facebook: "\EA01";
-$icon-mail: "\EA02";
+$icon-article: "\EA01";
+$icon-before: "\EA02";
+$icon-calendar: "\EA03";
+$icon-edit: "\EA04";
+$icon-email: "\EA05";
+$icon-facebook: "\EA06";
+$icon-mail: "\EA07";
+$icon-mark: "\EA08";
+$icon-phone: "\EA09";
+$icon-price: "\EA0A";
+$icon-review: "\EA0B";
+$icon-telegram: "\EA0C";
+$icon-viber: "\EA0D";
 
 
 %icon {
@@ -29,5 +40,16 @@ $icon-mail: "\EA02";
   display: inline-block;
 }
 
+.icon-article:before { content: $icon-article; }
+.icon-before:before { content: $icon-before; }
+.icon-calendar:before { content: $icon-calendar; }
+.icon-edit:before { content: $icon-edit; }
+.icon-email:before { content: $icon-email; }
 .icon-facebook:before { content: $icon-facebook; }
 .icon-mail:before { content: $icon-mail; }
+.icon-mark:before { content: $icon-mark; }
+.icon-phone:before { content: $icon-phone; }
+.icon-price:before { content: $icon-price; }
+.icon-review:before { content: $icon-review; }
+.icon-telegram:before { content: $icon-telegram; }
+.icon-viber:before { content: $icon-viber; }

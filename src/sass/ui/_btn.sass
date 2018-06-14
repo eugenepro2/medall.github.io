@@ -30,4 +30,21 @@
       +tr
     &:hover:before
       opacity: 1
+  &-secondary
+    background-color: none
+    border: 3px solid $white
+    position: relative
+    &:before
+      content: ''
+      background-image: linear-gradient(94deg, $blue2, $aqua 97%)
+      width: 100%
+      height: 100%
+      display: block
+      position: absolute
+      top: 0
+      left: 0
+      opacity: 0
+      +tr
+    &:hover:before
+      opacity: 1
 

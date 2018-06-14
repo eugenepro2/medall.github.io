@@ -10,3 +10,46 @@ body
 
 .ubuntu
   font-family: 'Ubuntu', sans-serif
+
+.heading
+  h2
+    @extend .roboto
+    font-size: 35px
+    font-weight: 300
+    color: rgba(63, 63, 63, 0.65)
+    margin-bottom: 35px
+
+.flex
+  display: flex
+
+//Tabs
+.tabs__content
+  display: none
+  &.active
+    display: block
+
+//Social
+.social__info
+  margin-left: 50px
+  p
+    margin-bottom: 15px
+    font-size: 20px
+    font-weight: 300
+    @extend .roboto
+  a
+    display: flex
+    align-items: flex-end
+    margin-right: 40px
+    font-size: 20px
+    color: $white
+    text-decoration: none
+    i
+      display: block
+      margin-right: 10px
+    .i-whatsapp
+      +s('whatsapp')
+    .i-telegram
+      +s('telegram')
+    .i-viber
+      +s('viber')
+			

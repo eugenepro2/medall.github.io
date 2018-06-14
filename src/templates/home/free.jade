@@ -1,0 +1,27 @@
+section.free
+  .container-fluid
+    .row
+      .col-xs-12
+        h2 Запишитесь<br> на бесплатную* консультацию
+        p Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:
+        form
+          .flex
+            input(type="tel", name="phone" placeholder="Ваш номер телефона")
+            input(type="text", name="name" placeholder="Ваше имя")
+          .flex
+            button.btn.btn-secondary(type="submit")
+              i.icon.icon-mail
+              span Отправить запрос
+            .social__info
+              p Или свяжитесь с нами через:
+              .flex
+                a(href="#")
+                  i.i-whatsapp
+                  | WhatsApp
+                a(href="#")
+                  i.i-telegram
+                  | Telegram
+                a(href="#")
+                  i.i-viber
+                  | Viber
+          span * Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.
