@@ -19,9 +19,10 @@ $icon-mail: "\EA07";
 $icon-mark: "\EA08";
 $icon-phone: "\EA09";
 $icon-price: "\EA0A";
-$icon-review: "\EA0B";
-$icon-telegram: "\EA0C";
-$icon-viber: "\EA0D";
+$icon-quote: "\EA0B";
+$icon-review: "\EA0C";
+$icon-telegram: "\EA0D";
+$icon-viber: "\EA0E";
 
 
 %icon {
@@ -50,6 +51,7 @@ $icon-viber: "\EA0D";
 .icon-mark:before { content: $icon-mark; }
 .icon-phone:before { content: $icon-phone; }
 .icon-price:before { content: $icon-price; }
+.icon-quote:before { content: $icon-quote; }
 .icon-review:before { content: $icon-review; }
 .icon-telegram:before { content: $icon-telegram; }
 .icon-viber:before { content: $icon-viber; }
