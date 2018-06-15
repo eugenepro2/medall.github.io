@@ -10,8 +10,12 @@ html
       block header
         include ../partials/_header
       block content
+
+      block footer
+        include ../partials/_footer
     //END out
 
     //LOAD SCRIPTS
     block scripts
+      script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
       script(type="text/javascript" src="js/app.js")
