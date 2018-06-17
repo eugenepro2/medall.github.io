@@ -1,13 +1,15 @@
 .contact
   padding-top: 150px
-  +r(1439)
-    padding-top: 50px
+  +r($desktop)
+    padding-top: 100px
   +r($tablet)
     padding-top: 70px
   +r($mobile)
     padding-top: 50px
   &__top
     margin-bottom: 50px
+    +r($desktop)
+      margin-bottom: 30px
     +r($tablet)
       margin-bottom: 20px
   h2
@@ -26,6 +28,9 @@
       font-size: 55px
       color: #cfcece
       margin-right: 30px
+      +r($desktop)
+        font-size: 36px
+        margin-right: 20px
       +r($tablet)
         font-size: 38px
       +r($mobile)
@@ -35,17 +40,20 @@
       font-size: 25px
       text-decoration: none
       color: $black-two
-      +r(1679)
-        font-size: 18px
+      +r($desktop)
+        font-size: 17px
       +r($tablet)
         margin-right: 20px
       +r($mobile)
         font-size: 16px
+    a[href^="mailto:"]
+      +r($desktop)
+        font-size: 15px
     p
       font-size: 22px
       line-height: 1.45
-      +r(1679)
-        font-size: 16px
+      +r($desktop)
+        font-size: 15px
       +r($tablet)
         font-size: 18px
         display: inline-block
@@ -60,10 +68,8 @@
     color: #32a3c3
     font-weight: 400
     margin-left: 20px
-    +r(1679)
-      font-size: 18px
-    +r(1199)
-      font-size: 13px
+    +r($desktop)
+      font-size: 16.5px
     &.active
       color: $black
       text-decoration: none
@@ -73,5 +79,7 @@
 #map
   margin-top: 55px
   height: 475px
+  +r($desktop)
+    height: 320px
   +r($tablet)
     margin-top: 0

@@ -3,6 +3,8 @@
     background: rgba($grey, 0.9)
     padding-top: 70px
     padding-bottom: 120px
+    +r($desktop)
+      padding-top: 50px
     +r($tablet)
       padding-bottom: 100px
     +r($mobile)
@@ -15,17 +17,15 @@
       font-weight: 300
       @extend .roboto
       color: $black-two
-      +r(1679)
-        font-size: 16px
+      +r($desktop)
+        font-size: 15px
   &__menu
     display: inline-flex
     flex-wrap: wrap
     &:first-child
       width: 29%
-      +r(1439)
+      +r($desktop)
         width: 35%
-      +r(1279)
-        width: 45%
       +r($tablet)
         width: 60%
         margin-bottom: 70px
@@ -34,10 +34,8 @@
         margin-bottom: 50px
     &:last-child
       width: 70%
-      +r(1439)
-        width: 64%
-      +r(1279)
-        width: 53%
+      +r($desktop)
+        width: 60%
       +r($tablet)
         width: 100%
     h2
@@ -46,8 +44,8 @@
       color: #3f3f3f
       margin-bottom: 20px
       width: 100%
-      +r(1679)
-        font-size: 22px
+      +r($desktop)
+        font-size: 17.5px
       +r($tablet)
         font-size: 26px
       +r($mobile)
@@ -58,7 +56,6 @@
       +r($tablet)
         width: 45%
         margin-right: 2px
-      
       li
         a
           font-size: 24px
@@ -67,8 +64,8 @@
           line-height: 1.88
           color: #3f3f3f
           text-decoration: none
-          +r(1679)
-            font-size: 18px
+          +r($desktop)
+            font-size: 16.5px
           +r($tablet)
             font-size: 20px
           +r($mobile)
@@ -77,6 +74,9 @@
     width: 180px
     display: inline-block
     margin-right: 35px
+    +r($desktop)
+      width: 125px
+      margin-right: 18px
     img
       width: 100%
   .copyright
@@ -88,7 +88,6 @@
     text-transform: uppercase
     position: relative
     top: -5px
-    +r(1679)
-      font-size: 16px
-  
+    +r($desktop)
+      font-size: 15px
     

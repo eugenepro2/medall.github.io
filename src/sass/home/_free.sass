@@ -6,6 +6,10 @@
 	color: $white
 	background-position: 50% 50%
 	overflow: hidden
+	+r($desktop)
+		margin-top: 70px
+		padding-top: 150px
+		padding-bottom: 50px
 	+r($tablet)
 		background-image: url('../img/bg-free-m.jpg')
 		padding-bottom: 40px
@@ -78,6 +82,10 @@
 			font-size: 20px
 			margin-top: 50px
 			display: block
+			+r($desktop)
+				margin-top: 35px
+				font-size: 13.5px
+				font-weight: 300
 			+r($tablet)
 				font-weight: 300
 			+r($mobile)
