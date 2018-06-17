@@ -223,6 +223,8 @@
 	&__before
 		h2
 			margin-bottom: 25px
+			+r($desktop)
+				font-size: 16.5px
 		&__photos
 			display: flex
 			justify-content: space-between
@@ -230,12 +232,8 @@
 			img
 				width: calc(25% - 9px)
 				margin-bottom: 15px
-				+r(1679)
-					height: 150px
-				+r(1279)
-					height: 130px
-				+r(1199)
-					height: 110px
+				+r($desktop)
+					height: 125px
 				+r($tablet)
 					height: 170px
 	&__review
@@ -243,20 +241,18 @@
 			font-size: 22px
 			color: $black-four
 			margin-bottom: 40px
-			+r(1439)
-				margin-bottom: 20px
+			+r($desktop)
+				font-size: 16.5px
+				margin-bottom: 30px
 		&__prev, &__next
 			font-size: 22px
 			color: $black-four
 			font-weight: 700
 			display: inline-block
 			margin-top: 100px
-			+r(1800)
+			+r($desktop)
+				font-size: 16.5px
 				margin-top: 50px
-			+r(1679)
-				margin-top: 0
-			+r(1199)
-				font-size: 18px
 			+r($tablet)
 				font-size: 22px
 				margin-top: 100px
@@ -264,8 +260,8 @@
 			float: right
 		.review-slider
 			padding: 40px
-			+r(1439)
-				padding: 20px
+			+r($desktop)
+				padding: 30px
 			+r($tablet)
 				padding: 40px
 			&:before, &:after
@@ -290,15 +286,17 @@
 				margin-bottom: 10px
 				b
 					@extend .ubuntu
+				+r($desktop)
+					font-size: 13.5px
 			p
 				@extend .roboto
 				font-weight: 300
 				line-height: 1.44
 				font-size: 18px
 				margin-bottom: 40px
-				+r(1199)
-					font-size: 13px
-					margin-bottom: 20px
+				+r($desktop)
+					font-size: 13.5px
+					margin-bottom: 30px
 				+r($tablet)
 					font-size: 20px
 					margin-bottom: 40px
@@ -311,5 +309,5 @@
 					span
 						@extend .ubuntu
 						font-weight: 700
-						+r(1199)
-							font-size: 13px
+						+r($desktop)
+							font-size: 13.5px
