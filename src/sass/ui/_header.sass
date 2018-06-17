@@ -3,8 +3,12 @@
 	padding-bottom: 30px
 	+r(1199)
 		padding-top: 40px
+	+r($mobile)
+		padding-top: 30px
 	.logo
 		+center
+		+r($mobile)
+			justify-content: flex-end
 		img
 			width: 230px
 			+r(1679)
@@ -16,9 +20,16 @@
 			+r($tablet)
 				width: 233px
 				margin-bottom: 65px
+			+r($mobile)
+				width: 200px
+				margin-bottom: 30px
+				position: relative
+				top: 4px
 	&__info
 		display: flex
 		flex-wrap: wrap
+		+r(1279)
+			margin-left: 20px
 		+r($tablet)
 			flex-direction: column
 			margin-left: 10px
@@ -32,7 +43,7 @@
 			+r(1679)
 				font-size: 20px
 			+r(1439)
-				font-size: 16px
+				font-size: 15px
 			+r(1199)
 				font-size: 13px
 			+r($tablet)
@@ -60,8 +71,10 @@
 					font-size: 20px
 				+r(1439)
 					font-size: 16px
+				+r(1439)
+					font-size: 14px
 				+r(1199)
-					font-size: 13px
+					font-size: 12px
 				+r($tablet)
 					font-size: 18px
 			p
@@ -71,8 +84,10 @@
 					font-size: 20px
 				+r(1439)
 					font-size: 16px
+				+r(1439)
+					font-size: 14px
 				+r(1199)
-					font-size: 13px
+					font-size: 12px
 				+r($tablet)
 					font-size: 18px
 	.btn:first-child
@@ -80,10 +95,12 @@
 		+r(1439)
 			margin-right: 9px
 		+r(1199)
-			margin-right: 0
-			margin-bottom: 5px
+			margin-right: 9px
 		+r($tablet)
 			margin-right: 9px
+		+r($mobile)
+			margin-right: 0
+			margin-bottom: 7px
 	&__sections
 		margin-top: 65px
 		ul
@@ -123,15 +140,26 @@
 	&__btn
 		display: inline-flex
 		+r(1199)
-			flex-direction: column
+			.btn
+				height: 45px
 		+r($tablet)
 			flex-direction: row
 			.btn
 				width: 300px
 				height: 65px
+		+r($mobile)
+			flex-direction: column
+			width: 100%
+			.btn
+					width: 100%
+
 	.open-menu
 		display: inline-block
 		font-size: 55px
 		color: #bdc6d1
 		position: relative
 		top: 2px
+		+r($mobile)
+			margin-bottom: 30px
+			img
+				width: 40px

@@ -2,12 +2,49 @@
   padding-top: 150px
   +r($tablet)
     padding-top: 70px
+  +r($mobile)
+    padding: 50px 0
+    position: relative
+    overflow: hidden
   &__row
     background-color: #e7ecf2
     height: 280px
   .owl-carousel
     margin-top: 35px
+    +r($mobile)
+      margin-top: 29px
   .item
     background: #ffffff
     padding: 10px
     height: 220px
+    +r($mobile)
+      width: 106%
+      height: 100%
+      display: flex
+      justify-content: center
+      margin: 0 -3%
+      img
+        height: 200px
+        width: initial
+  .owl-stage-outer
+    +r($mobile)
+      overflow: visible
+  &__prev, &__next
+    position: absolute
+    top: 55%
+    transform: translateY(-50%)
+    width: 55px
+    height: 55px
+    background: $white
+    +center
+    z-index: 10
+    i
+      font-size: 20px
+      color: #8c9eb3
+  &__prev
+    left: 15px
+    i
+      transform: rotate(180deg)
+      display: inline-block
+  &__next
+    right: 15px

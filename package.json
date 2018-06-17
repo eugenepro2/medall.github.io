@@ -71,6 +71,7 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
-    "owl.carousel": "^2.3.4"
+    "owl.carousel": "^2.3.4",
+    "slideout": "^1.0.1"
   }
 }

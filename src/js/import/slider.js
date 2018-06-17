@@ -6,7 +6,25 @@ certificate.owlCarousel({
   margin: 15,
   loop: true,
   autoWidth: true,
-  items: 4
+  items: 4,
+  responsive : {
+    320 : {
+      items: 1,
+      autoWidth: false,
+    },
+    768 : {
+      items: 4,
+      autoWidth: true,
+    }
+  }
+});
+
+$('.certificate__next').click(function() {
+  certificate.trigger('next.owl.carousel');
+});
+// Go to the previous item
+$('.certificate__prev').click(function() {
+  certificate.trigger('prev.owl.carousel');
 });
 
 

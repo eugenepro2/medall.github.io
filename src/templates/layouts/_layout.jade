@@ -1,21 +1,71 @@
 include _mixins
 doctype html
 html
-  head
-    include _head
+	head
+		include _head
 
-  body(class=bodyClass)
-    //BEGIN out
-    .out(class=outClass)
-      block header
-        include ../partials/_header
-      block content
+	body(class=bodyClass)
+		//BEGIN out
+		#menu.slideout-menu
+			ul
+				li 
+					a(href="#") Цифровая стоматология
+					ul.sub
+						li
+							a(href="#") Главная
+						li
+							a(href="#") Услуги
+						li
+							a(href="#") До и после
+						li
+							a(href="#") Технологии
+						li
+							a(href="#") Цены
+						li
+							a(href="#") Кредит
+						li
+							a(href="#") Врачи
+						li
+							a(href="#") Консультации
+						li
+							a(href="#") Отзывы
+				li.active
+					a(href="#") Пластическая хирургия
+					ul.sub
+						li
+							a(href="#") Главная
+						li
+							a(href="#") Услуги
+						li
+							a(href="#") До и после
+						li
+							a(href="#") Технологии
+						li
+							a(href="#") Цены
+						li
+							a(href="#") Кредит
+						li
+							a(href="#") Врачи
+						li
+							a(href="#") Консультации
+						li
+							a(href="#") Отзывы
+				li 
+					a(href="#") Медицинская косметология
+				li 
+					a(href="#") Центр флебологии
+				li 
+					a(href="#") Пересадка волос
+		#panel.out(class=outClass)
+			block header
+				include ../partials/_header
+			block content
 
-      block footer
-        include ../partials/_footer
-    //END out
+			block footer
+				include ../partials/_footer
+		//END out
 
-    //LOAD SCRIPTS
-    block scripts
-      script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
-      script(type="text/javascript" src="js/app.js")
+		//LOAD SCRIPTS
+		block scripts
+			script(type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+			script(type="text/javascript" src="js/app.js")

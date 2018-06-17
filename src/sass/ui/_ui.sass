@@ -24,15 +24,18 @@ body
     +r($tablet)
       font-size: 28px
       margin-bottom: 20px
+    +r($mobile)
+      font-size: 18px
+      margin-bottom: 15px
 
 
 +r($mobile)
 	.hidden-xs
 		display: none !important
-@media only screen and (min-width: 768px) and (max-width: 1200px)
+@media only screen and (min-width: 768px) and (max-width: 1023px)
 	.hidden-sm
 		display: none !important
-+rmin(1200)
++rmin(1024)
 	.hidden-md
 		display: none !important
 

@@ -8,6 +8,8 @@
 		height: 450px
 	+r($tablet)
 		height: 415px
+	+r($mobile)
+		height: 270px
 	&__text
 		color: $white
 		position: absolute
@@ -15,15 +17,19 @@
 		+r(1679)
 			margin-left: -160px
 		+r(1439)
-			margin-left: -220px
+			margin-left: -300px
 		+r(1279)
 			margin-left: -260px
 		+r($tablet)
 			margin-left: 0
 			position: static
 			margin-top: 100px
+		+r($mobile)
+			margin-top: 90px
 		p
 			font-size: 26px
+			+r($mobile)
+				font-size: 16px
 		h2
 			font-size: 55.5px
 			line-height: 1.16
@@ -33,6 +39,9 @@
 			+r($tablet)
 				font-size: 44.5px
 				margin-bottom: 50px
+			+r($mobile)
+				font-size: 28.5px
+				margin-bottom: 20px
 			&:before
 				content: ''
 				+s('arrow')
@@ -40,19 +49,29 @@
 				position: absolute
 				right: -210px
 				top: -150px
+				+r(1439)
+					right: -150px
 				+r($tablet)
 					content: none
 		.btn
 			width: 350px
 			float: right
+			+r($mobile)
+				width: 100%
+				height: 50px
+				float: none
+				font-size: 16.5px
 	&__form
 		background: $white
 		padding: 45px 60px
 		margin-top: 50px
 		+r(1679)
 			margin-top: 55px
+		+r(1439)
+			width: 500px
+			float: right
 		+r(1279)
-			padding: 30px
+			width: 400px
 			margin-top: 95px
 		+r(1199)
 			margin-top: 22px

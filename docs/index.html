@@ -15,15 +15,49 @@
 
   <body>
     <!--BEGIN out-->
-    <div class="out">
+    <div id="menu" class="slideout-menu">
+      <ul>
+        <li> <a href="#">Цифровая стоматология</a>
+          <ul class="sub">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">До и после</a></li>
+            <li><a href="#">Технологии</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Врачи</a></li>
+            <li><a href="#">Консультации</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+        </li>
+        <li class="active"><a href="#">Пластическая хирургия</a>
+          <ul class="sub">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">До и после</a></li>
+            <li><a href="#">Технологии</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Кредит</a></li>
+            <li><a href="#">Врачи</a></li>
+            <li><a href="#">Консультации</a></li>
+            <li><a href="#">Отзывы</a></li>
+          </ul>
+        </li>
+        <li> <a href="#">Медицинская косметология</a></li>
+        <li> <a href="#">Центр флебологии</a></li>
+        <li> <a href="#">Пересадка волос</a></li>
+      </ul>
+    </div>
+    <div id="panel" class="out">
       <!--BEGIN header-->
       <header class="header">
         <div class="container-fluid">
           <div class="row bottom-xs">
-            <div class="col-md-2 col-sm-5 center-xs">
-              <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="col-md-2 col-sm-5 col-xs-12 center-xs between-xs flex">
+              <div class="open-menu hidden-md hidden-sm"><img src="img/burger.png" alt=""></div>
+              <div class="logo"><img src="img/logo.png" alt="" class="hidden-xs"><img src="img/logo-m.png" alt="" class="hidden-sm hidden-md"></div>
             </div>
-            <div class="col-md-6 col-sm-7">
+            <div class="col-md-6 col-sm-7 hidden-xs">
               <div class="header__info">
                 <p>Центр эстетической медицины на Васильевском острове:</p>
                 <div class="header__info__block">
@@ -34,7 +68,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12 end-xs flex middle-xs between-xs">
+            <div class="col-md-4 col-sm-12 col-xs-12 end-xs middle-xs between-xs">
               <div class="open-menu hidden-md hidden-xs"><img src="img/burger.png" alt=""></div>
               <div class="header__btn"><a href="#" class="btn btn-primary"> <span>Обратный звонок</span></a><a href="#" class="btn btn-primary"> <span>Запись на приём</span></a></div>
             </div>
@@ -57,7 +91,7 @@
       <section class="intro">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4 col-md-offset-3 col-md-offset-2 col-md-4 col-sm-12 col-sm-offset-0 end-sm">
+            <div class="col-md-4 col-md-offset-3 start-md col-sm-12 col-sm-offset-0 end-xs col-xs-12">
               <div class="intro__text">
                 <p>с 7.05 по 14.05.2018</p>
                 <h2>Идеальные губы<br> за 15 000 р.</h2><a href="#" class="btn btn-third hidden-md"> <span>Запись на консультацию</span></a></div>
@@ -248,6 +282,11 @@
                 </div>
               </div>
             </div>
+            <a href="#" class="kind__small hidden-sm hidden-md">
+              <article style="background-image: url('img/kind/1.jpg')">
+                <h1>Пластика груди</h1>
+              </article>
+            </a>
             <a href="#" class="kind__small">
               <article style="background-image: url('img/kind/2.jpg')">
                 <h1>Лицо</h1>
@@ -295,6 +334,8 @@
                   <div class="item"><a data-fancybox="certificate" href="img/certificate/6.jpg"><img src="img/certificate/6.jpg" alt=""></a></div>
                   <div class="item"><a data-fancybox="certificate" href="img/certificate/7.jpg"><img src="img/certificate/7.jpg" alt=""></a></div>
                 </div>
+                <div class="certificate__prev hidden-sm hidden-md"><i class="icon icon-certificate-prev"></i></div>
+                <div class="certificate__next hidden-sm hidden-md"><i class="icon icon-certificate-next"></i></div>
               </div>
             </div>
           </div>
@@ -309,7 +350,7 @@
               <h2>Запишитесь<br> на бесплатную* консультацию</h2>
               <p>Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:</p>
               <form>
-                <div class="flex"><input type="tel" name="phone" placeholder="Ваш номер телефона"><input type="text" name="name" placeholder="Ваше имя"></div>
+                <div class="flex"><input type="tel" name="phone" placeholder="Ваш номер телефона"><input type="text" name="name" placeholder="Ваше имя" class="hidden-xs"></div>
                 <div class="flex"><button type="submit" class="btn btn-secondary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                   <div class="social__info">
                     <p>Или свяжитесь с нами через:</p>
@@ -325,11 +366,11 @@
       <section class="subscribe">
         <div class="container-fluid">
           <div class="row bottom-xs">
-            <div class="col-md-5 col-sm-7">
+            <div class="col-md-5 col-sm-7 col-xs-12">
               <h2>Подпишитесь и получайте наши<br> спецпредложения и акции:</h2>
               <form><input type="email" name="email" placeholder="Ваш e-mail"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Подписаться</span></button></form>
             </div>
-            <div class="col-md-5 col-sm-7">
+            <div class="col-md-5 col-sm-7 col-xs-12">
               <div class="social__info">
                 <p>Или получайте новости в любимый<br> мессенджер:</p>
                 <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
@@ -420,9 +461,9 @@
         <div class="footer__bottom">
           <div class="container-fluid">
             <div class="row middle-xs">
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-12 col-xs-12">
                 <div class="logo"><img src="img/logo-footer.png" alt=""></div>
-                <div class="copyright">MEDALL © 2018 г. Санкт-Петербург </div>
+                <div class="copyright hidden-xs">MEDALL © 2018 г. Санкт-Петербург </div>
               </div>
               <div class="col-md-6 end-xs hidden-sm hidden-xs">
                 <p>Многопрофильная клиника «Медицинский Центр Города» </p>

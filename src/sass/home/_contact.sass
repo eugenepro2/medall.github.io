@@ -4,6 +4,8 @@
     padding-top: 50px
   +r($tablet)
     padding-top: 70px
+  +r($mobile)
+    padding-top: 50px
   &__top
     margin-bottom: 50px
     +r($tablet)
@@ -26,6 +28,9 @@
       margin-right: 30px
       +r($tablet)
         font-size: 38px
+      +r($mobile)
+        font-size: 28px
+        margin-right: 15px
     a
       font-size: 25px
       text-decoration: none
@@ -34,6 +39,8 @@
         font-size: 18px
       +r($tablet)
         margin-right: 20px
+      +r($mobile)
+        font-size: 16px
     p
       font-size: 22px
       line-height: 1.45
@@ -45,6 +52,9 @@
         width: 85%
         br
           display: none
+      +r($mobile)
+        font-size: 16px
+        width: 93%
   &__link
     font-size: 24px
     color: #32a3c3

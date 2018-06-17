@@ -1,4 +1,5 @@
 import '@fancyapps/fancybox';
+import Slideout from 'slideout';
 
 //Tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -27,3 +28,20 @@ $(window).on('resize', function() {
   Kind();
 });
 Kind();
+
+
+//SlideOut
+var slideout = new Slideout({
+  'panel': document.getElementById('panel'),
+  'menu': document.getElementById('menu'),
+  'padding': 256,
+  'tolerance': 70
+});
+
+$('.open-menu').on('click', function() {
+  slideout.toggle();
+});
+
+$('.slideout-menu a').on('click', function() {
+  $(this).siblings('.sub').slideToggle();
+});
