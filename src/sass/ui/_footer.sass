@@ -3,6 +3,8 @@
     background: rgba($grey, 0.9)
     padding-top: 70px
     padding-bottom: 120px
+    +r($tablet)
+      padding-bottom: 100px
   &__bottom
     background: rgba($grey2, 0.24)
     padding: 35px
@@ -11,20 +13,41 @@
       font-weight: 300
       @extend .roboto
       color: $black-two
+      +r(1679)
+        font-size: 16px
   &__menu
     display: inline-flex
     flex-wrap: wrap
     &:first-child
-      width: 30%
+      width: 29%
+      +r(1439)
+        width: 35%
+      +r($tablet)
+        width: 60%
+        margin-bottom: 70px
+    &:last-child
+      width: 70%
+      +r(1439)
+        width: 64%
+      +r($tablet)
+        width: 100%
     h2
       font-size: 26px
       text-transform: uppercase
       color: #3f3f3f
       margin-bottom: 20px
       width: 100%
+      +r(1679)
+        font-size: 22px
+      +r($tablet)
+        font-size: 26px
     ul
       width: 40%
       margin-right: 40px
+      +r($tablet)
+        width: 45%
+        margin-right: 2px
+  
       li
         a
           font-size: 24px
@@ -33,6 +56,10 @@
           line-height: 1.88
           color: #3f3f3f
           text-decoration: none
+          +r(1679)
+            font-size: 18px
+          +r($tablet)
+            font-size: 20px
   .logo
     width: 180px
     display: inline-block
@@ -48,5 +75,7 @@
     text-transform: uppercase
     position: relative
     top: -5px
+    +r(1679)
+      font-size: 16px
   
     

@@ -6,19 +6,29 @@
 		width: 50%
 		height: 830px
 		background-size: cover
-		ackground-repeat: no-repeat
+		background-repeat: no-repeat
 		margin-bottom: 10px
 		+center
 		flex-direction: column
+		+r($tablet)
+			width: 100%
+			height: 620px
 		div
 			width: 75%
 		h1
 			font-size: 90px
 			color: $white
 			margin-bottom: 60px
+			+r(1199)
+				font-size: 50px
+			+r($tablet)
+				font-size: 70px
+				margin-bottom: 50px
 		ul
 			width: 70%
 			display: inline-block
+			+r(1199)
+				width: 100%
 			li
 				display: inline-block
 				margin-bottom: 20px
@@ -30,6 +40,10 @@
 					text-decoration: none
 					position: relative
 					+tr
+					+r(1199)
+						font-size: 18px
+					+r($tablet)
+						font-size: 25px
 					&:before
 						content: '/'
 						position: absolute
@@ -40,10 +54,17 @@
 	&__tabs
 		width: 50%
 		height: 830px
+		+r($tablet)
+			width: 100%
+			height: 850px
 	&__small
 		width: calc(25% - 5px)
 		height: 440px
 		display: block
+		+r($tablet)
+			height: 360px
+			width: calc(50% - 10px)
+			margin-bottom: 10px
 		article
 			height: 100%
 			background-size: cover
@@ -55,14 +76,19 @@
 				left: 50px
 				color: $white
 				font-size: 75px
+				+r(1439)
+					font-size: 50px
 		&:not(:last-child)
 			margin-right: 10px
 		&:last-child
 			width: calc(25% - 15px)
+			+r($tablet)
+				width: calc(50% - 10px)
 		&:nth-last-child(-n+2)
 			article h1
 				font-size: 55px
-
+				+r(1439)
+					font-size: 40px
 
 .tabs
 	margin-top: 30px
@@ -71,24 +97,59 @@
 		justify-content: space-between
 		margin-left: 50px
 		margin-right: 60px
+		+r(1439)
+			margin-left: 20px
+		+r($tablet)
+			margin: 0 30px
 		li
 			font-size: 29.5px
 			color: #b8b9bd
 			display: flex
 			align-items: center
+			+r(1679)
+				font-size: 24px
+			+r(1439)
+				font-size: 22px
+			+r(1199)
+				font-size: 16px
+			+r($tablet)
+				font-size: 24.5px
 			i
 				font-size: 35px
 				margin-right: 15px
+				+r(1679)
+					margin-right: 10px
+					font-size: 30px
+				+r(1199)
+					font-size: 25px
+				+r($tablet)
+					font-size: 27px
 			&.active
 				color: $black-four
 	&__content
 		padding: 80px 100px
+		+r(1679)
+			padding: 50px 70px
+		+r(1439)
+			padding: 20px
+		+r($tablet)
+			padding: 30px
 	&__price
+		a
+			text-decoration: none
 		p
 			font-size: 22px
 			line-height: 1.27
 			color: #3b3b3b
 			margin-bottom: 40px
+			font-weight: 400
+			+r(1679)
+				margin-bottom: 20px
+				font-size: 20px
+			+r(1199)
+				font-size: 13px
+			+r($tablet)
+				font-size: 28px
 			i
 				color: #b9babe
 				letter-spacing: 2.2px
@@ -100,19 +161,39 @@
 			border: solid 1px #e1e1e1
 			opacity: 0.9
 			margin-bottom: 50px
+			+r(1679)
+				margin-bottom: 30px
 	&__article
+		a
+			text-decoration: none
+			display: block
+			&:not(:last-child)
+				border-bottom: solid 1px #e1e1e1
 		&__block
 			display: flex
 			flex-wrap: wrap
 			align-items: center
 			padding: 15px 0
-			&:not(:last-child)
-				border-bottom: solid 1px #e1e1e1
+			+r(1679)
+				padding: 10px 0
+			+r(1199)
+				padding: 5px 0
+			+r($tablet)
+				padding: 20px 0
 			header
 				width: 140px
 				height: 100px
 				margin-right: 20px
 				overflow: hidden
+				+r(1439)
+					width: 120px
+					height: 90px
+				+r(1199)
+					width: 100px
+					height: 75px
+				+r($tablet)
+					width: 140px
+					height: 100px
 				img
 					width: 100%
 			section
@@ -120,6 +201,12 @@
 				h1
 					font-size: 22px
 					color: $black-four
+					+r(1679)
+						font-size: 20px
+					+r(1199)
+						font-size: 16px
+					+r($tablet)
+						font-size: 22px
 	&__before
 		h2
 			margin-bottom: 25px
@@ -130,21 +217,42 @@
 			img
 				width: calc(25% - 9px)
 				margin-bottom: 15px
+				+r(1679)
+					height: 150px
+				+r(1199)
+					height: 110px
+				+r($tablet)
+					height: 170px
 	&__review
 		h2
 			font-size: 22px
 			color: $black-four
 			margin-bottom: 40px
+			+r(1439)
+				margin-bottom: 20px
 		&__prev, &__next
 			font-size: 22px
 			color: $black-four
 			font-weight: 700
 			display: inline-block
 			margin-top: 100px
+			+r(1800)
+				margin-top: 50px
+			+r(1679)
+				margin-top: 0
+			+r(1199)
+				font-size: 18px
+			+r($tablet)
+				font-size: 22px
+				margin-top: 100px
 		&__next
 			float: right
 		.review-slider
 			padding: 40px
+			+r(1439)
+				padding: 20px
+			+r($tablet)
+				padding: 40px
 			&:before, &:after
 				content: $icon-quote
 				position: absolute
@@ -173,6 +281,12 @@
 				line-height: 1.44
 				font-size: 18px
 				margin-bottom: 40px
+				+r(1199)
+					font-size: 13px
+					margin-bottom: 20px
+				+r($tablet)
+					font-size: 20px
+					margin-bottom: 40px
 			.item__info
 				display: flex
 				&__block
@@ -182,3 +296,5 @@
 					span
 						@extend .ubuntu
 						font-weight: 700
+						+r(1199)
+							font-size: 13px

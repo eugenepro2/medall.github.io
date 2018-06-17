@@ -11,18 +11,19 @@
 
 $icon-article: "\EA01";
 $icon-before: "\EA02";
-$icon-calendar: "\EA03";
-$icon-edit: "\EA04";
-$icon-email: "\EA05";
-$icon-facebook: "\EA06";
-$icon-mail: "\EA07";
-$icon-mark: "\EA08";
-$icon-phone: "\EA09";
-$icon-price: "\EA0A";
-$icon-quote: "\EA0B";
-$icon-review: "\EA0C";
-$icon-telegram: "\EA0D";
-$icon-viber: "\EA0E";
+$icon-burger: "\EA03";
+$icon-calendar: "\EA04";
+$icon-edit: "\EA05";
+$icon-email: "\EA06";
+$icon-facebook: "\EA07";
+$icon-mail: "\EA08";
+$icon-mark: "\EA09";
+$icon-phone: "\EA0A";
+$icon-price: "\EA0B";
+$icon-quote: "\EA0C";
+$icon-review: "\EA0D";
+$icon-telegram: "\EA0E";
+$icon-viber: "\EA0F";
 
 
 %icon {
@@ -43,6 +44,7 @@ $icon-viber: "\EA0E";
 
 .icon-article:before { content: $icon-article; }
 .icon-before:before { content: $icon-before; }
+.icon-burger:before { content: $icon-burger; }
 .icon-calendar:before { content: $icon-calendar; }
 .icon-edit:before { content: $icon-edit; }
 .icon-email:before { content: $icon-email; }

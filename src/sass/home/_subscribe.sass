@@ -4,6 +4,10 @@
   padding-top: 100px
   padding-bottom: 85px
   position: relative
+  overflow: hidden
+  +r($tablet)
+    padding-top: 60px
+    padding-bottom: 50px
   &:before
     content: ''
     background-image: url('../img/phone.png')
@@ -13,21 +17,57 @@
     position: absolute
     right: 100px
     top: -68px
+    +r(1679)
+      right: 20px
+      top: -81px
+    +r(1439)
+      width: 250px
+      height: 320px
+      background-size: cover
+      top: 58px
+    +r(1199)
+      content: none
+    +r($tablet)
+      content: ''
+      width: 330px
+      height: 420px
+      right: 2px
+      top: 90px
   h2
     font-size: 35px
     color: #292929
     margin-bottom: 50px
+    +r(1679)
+      font-size: 30px
+    +r(1439)
+      font-size: 24px
+    +r($tablet)
+      font-size: 25px
+      margin-bottom: 40px
   form
     display: flex
+    +r($tablet)
+      flex-direction: column
+      margin-bottom: 50px
     input
       width: 430px
       margin-right: 20px
+      +r($tablet)
+        width: 345px
     button
       width: 280px
       height: 65px
+      +r($tablet)
+        width: 345px
   .social__info
     position: relative
     bottom: 20px
     margin-left: 70px
+    +r(1800)
+      margin-left: 20px
+    +r(1439)
+      margin-left: 10px
+    +r($tablet)
+      bottom: 0
     a
       color: #292929

@@ -4,16 +4,35 @@
 	height: 560px
 	position: relative
 	overflow: hidden
+	+r(1199)
+		height: 450px
+	+r($tablet)
+		height: 415px
 	&__text
 		color: $white
 		position: absolute
 		bottom: 70px
+		+r(1679)
+			margin-left: -160px
+		+r(1439)
+			margin-left: -220px
+		+r(1279)
+			margin-left: -260px
+		+r($tablet)
+			margin-left: 0
+			position: static
+			margin-top: 100px
 		p
 			font-size: 26px
 		h2
 			font-size: 55.5px
 			line-height: 1.16
 			position: relative
+			+r(1199)
+				font-size: 40px
+			+r($tablet)
+				font-size: 44.5px
+				margin-bottom: 50px
 			&:before
 				content: ''
 				+s('arrow')
@@ -21,18 +40,45 @@
 				position: absolute
 				right: -210px
 				top: -150px
+				+r($tablet)
+					content: none
+		.btn
+			width: 350px
+			float: right
 	&__form
 		background: $white
 		padding: 45px 60px
 		margin-top: 50px
+		+r(1679)
+			margin-top: 55px
+		+r(1279)
+			padding: 30px
+			margin-top: 95px
+		+r(1199)
+			margin-top: 22px
 		form
 			h3
 				font-size: 32px
 				margin-bottom: 35px
 				color: #3f3f3f
+				+r(1679)
+					font-size: 21px
+				+r(1439)
+					font-size: 18px
+					br
+						display: none
+				+r(1199)
+					font-size: 16px
+					margin-bottom: 10px
 			p
 				margin-top: 30px
 				font-weight: 300
 				@extend .roboto
 				font-size: 18.5px
 				color: $black-three
+				+r(1679)
+					font-size: 16px
+					br
+						display: none
+				+r(1199)
+					font-size: 13px

@@ -4,13 +4,24 @@
 	padding-top: 275px
 	padding-bottom: 80px
 	color: $white
+	background-position: 50% 50%
+	+r($tablet)
+		background-image: url('../img/bg-free-m.jpg')
+		padding-bottom: 40px
 	h2
 		font-size: 55px
 		margin-bottom: 35px
+		+r($tablet)
+			font-size: 45px
+			margin-bottom: 55px
+			br
+				display: none
 	p
 		font-size: 21.5px
 		line-height: 1.4
 		margin-bottom: 50px
+		+r($tablet)
+			margin-bottom: 30px
 	form
 		input
 			width: 430px
@@ -22,8 +33,20 @@
 				font-weight: 300
 		button
 			width: 430px
+			+r($tablet)
+				width: 345px
+				height: 80px
+				font-size: 19.5px
 		> span
 			@extend .roboto
 			font-size: 20px
 			margin-top: 50px
 			display: block
+			+r($tablet)
+				font-weight: 300
+		+r($tablet)
+			.flex:nth-of-type(2)
+				flex-direction: column
+			.social__info
+				margin-left: 0
+				margin-top: 55px

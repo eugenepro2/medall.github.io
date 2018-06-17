@@ -1,62 +1,137 @@
 .header
-  padding-top: 70px
-  padding-bottom: 30px
-  .logo
-    +center
-    img
-      width: 230px
-  &__info
-    display: flex
-    flex-wrap: wrap
-    > p
-      @extend .roboto
-      margin-bottom: 25px
-      font-size: 22px
-      width: 100%
-      color: $black-three
-    &__block
-      &:nth-of-type(1)
-        width: 40%
-      &:last-child
-        width: 60%
-      a
-        font-size: 22px
-        display: block
-        text-decoration: none
-        color: #000
-      p
-        @extend .ubuntu
-        font-size: 22px
-  .btn:first-child
-    margin-right: 15px
-  &__sections
-    margin-top: 65px
-    ul
-      display: flex
-      justify-content: space-between
-      li
-        height: 100px
-        background-color: #f2f3f9
-        width: 100%
-        &:not(:last-child)
-          margin-right: 8px
-        @for $i from 1 through 5
-          .icon-section-#{$i}
-            +s('section-#{$i}')
-            margin-right: 25px
-        a
-          display: flex
-          align-items: center
-          justify-content: flex-end
-          height: 100%
-          padding-left: 25px
-          font-size: 22px
-          color: #b8b9bd
-          text-decoration: none
-          flex-direction: row-reverse
-          +tr
-          &:hover, &.active
-            background: $white
-            color: $black-three
-  &__btn
-    display: flex
+	padding-top: 70px
+	padding-bottom: 30px
+	+r(1199)
+		padding-top: 40px
+	.logo
+		+center
+		img
+			width: 230px
+			+r(1679)
+				width: 200px
+			+r(1439)
+				width: 170px
+			+r(1199)
+				width: 150px
+			+r($tablet)
+				width: 233px
+				margin-bottom: 65px
+	&__info
+		display: flex
+		flex-wrap: wrap
+		+r($tablet)
+			flex-direction: column
+			margin-left: 10px
+			margin-bottom: 60px
+		> p
+			@extend .roboto
+			margin-bottom: 25px
+			font-size: 22px
+			width: 100%
+			color: $black-three
+			+r(1679)
+				font-size: 20px
+			+r(1439)
+				font-size: 16px
+			+r(1199)
+				font-size: 13px
+			+r($tablet)
+				order: -1
+				font-size: 16px
+				font-weight: 300
+				margin-bottom: 20px
+		&__block
+			&:nth-of-type(1)
+				width: 40%
+				+r($tablet)
+					width: 100%
+			&:last-child
+				width: 60%
+				+r($tablet)
+					order: -1
+					width: 100%
+					margin-bottom: 20px
+			a
+				font-size: 22px
+				display: block
+				text-decoration: none
+				color: #000
+				+r(1679)
+					font-size: 20px
+				+r(1439)
+					font-size: 16px
+				+r(1199)
+					font-size: 13px
+				+r($tablet)
+					font-size: 18px
+			p
+				@extend .ubuntu
+				font-size: 22px
+				+r(1679)
+					font-size: 20px
+				+r(1439)
+					font-size: 16px
+				+r(1199)
+					font-size: 13px
+				+r($tablet)
+					font-size: 18px
+	.btn:first-child
+		margin-right: 15px
+		+r(1439)
+			margin-right: 9px
+		+r(1199)
+			margin-right: 0
+			margin-bottom: 5px
+		+r($tablet)
+			margin-right: 9px
+	&__sections
+		margin-top: 65px
+		ul
+			display: flex
+			justify-content: space-between
+			li
+				height: 100px
+				background-color: #f2f3f9
+				width: 100%
+				+r(1439)
+					height: 60px
+				&:not(:last-child)
+					margin-right: 8px
+				@for $i from 1 through 5
+					.icon-section-#{$i}
+						+s('section-#{$i}')
+						margin-right: 25px      
+				a
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					height: 100%
+					padding-left: 25px
+					font-size: 22px
+					color: #b8b9bd
+					text-decoration: none
+					flex-direction: row-reverse
+					+tr
+					+r(1439)
+						font-size: 16px
+					+r(1199)
+						padding-left: 10px
+						font-size: 13px
+					&:hover, &.active
+						background: $white
+						color: $black-three
+	&__btn
+		display: inline-flex
+		+r(1199)
+			flex-direction: column
+		+r($tablet)
+			flex-direction: row
+			.btn
+				width: 300px
+				height: 65px
+	.open-menu
+		display: inline-block
+		font-size: 55px
+		color: #bdc6d1
+		position: relative
+		top: 2px
