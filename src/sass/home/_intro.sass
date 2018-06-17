@@ -4,8 +4,8 @@
 	height: 560px
 	position: relative
 	overflow: hidden
-	+r(1199)
-		height: 450px
+	+r($desktop)
+		height: 380px
 	+r($tablet)
 		height: 415px
 	+r($mobile)
@@ -14,12 +14,6 @@
 		color: $white
 		position: absolute
 		bottom: 70px
-		+r(1679)
-			margin-left: -160px
-		+r(1439)
-			margin-left: -300px
-		+r(1279)
-			margin-left: -260px
 		+r($tablet)
 			margin-left: 0
 			position: static
@@ -28,14 +22,16 @@
 			margin-top: 90px
 		p
 			font-size: 26px
+			+r($desktop)
+				font-size: 18px
 			+r($mobile)
 				font-size: 16px
 		h2
 			font-size: 55.5px
 			line-height: 1.16
 			position: relative
-			+r(1199)
-				font-size: 40px
+			+r($desktop)
+				font-size: 37.5px
 			+r($tablet)
 				font-size: 44.5px
 				margin-bottom: 50px
@@ -65,39 +61,25 @@
 		background: $white
 		padding: 45px 60px
 		margin-top: 50px
-		+r(1679)
-			margin-top: 55px
-		+r(1439)
-			width: 500px
-			float: right
-		+r(1279)
-			width: 400px
-			margin-top: 95px
-		+r(1199)
-			margin-top: 22px
+		+r($desktop)
+			padding: 30px 40px
+			margin-top: 35px
 		form
 			h3
 				font-size: 32px
 				margin-bottom: 35px
 				color: #3f3f3f
-				+r(1679)
-					font-size: 21px
-				+r(1439)
-					font-size: 18px
+				+r($desktop)
+					font-size: 21.5px
+					margin-bottom: 25px
 					br
 						display: none
-				+r(1199)
-					font-size: 16px
-					margin-bottom: 10px
 			p
 				margin-top: 30px
 				font-weight: 300
 				@extend .roboto
 				font-size: 18.5px
 				color: $black-three
-				+r(1679)
-					font-size: 16px
-					br
-						display: none
-				+r(1199)
-					font-size: 13px
+				+r($desktop)
+					font-size: 12.5px
+					margin-top: 10px

@@ -1,5 +1,7 @@
 .certificate
   padding-top: 150px
+  +r($desktop)
+    padding-top: 100px
   +r($tablet)
     padding-top: 70px
   +r($mobile)
@@ -9,14 +11,23 @@
   &__row
     background-color: #e7ecf2
     height: 280px
+    +r($desktop)
+      height: 190px
   .owl-carousel
     margin-top: 35px
+    +r($desktop)
+      margin-top: 18px
     +r($mobile)
       margin-top: 29px
   .item
     background: #ffffff
     padding: 10px
     height: 220px
+    +r($desktop)
+      height: 155px
+      img
+        height: 100%
+        width: initial
     +r($mobile)
       width: 106%
       height: 100%

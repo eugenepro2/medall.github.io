@@ -25,6 +25,9 @@ body
     font-weight: 300
     color: rgba(63, 63, 63, 0.65)
     margin-bottom: 35px
+    +r($desktop)
+      font-size: 24px
+      margin-bottom: 23px
     +r($tablet)
       font-size: 28px
       margin-bottom: 20px
@@ -61,6 +64,9 @@ body
     font-size: 20px
     font-weight: 300
     @extend .roboto
+    +r($desktop)
+      font-size: 13.5px
+      margin-bottom: 5px
   a
     display: flex
     align-items: flex-end
@@ -68,15 +74,21 @@ body
     font-size: 20px
     color: $white
     text-decoration: none
-    +r(1679)
-      margin-right: 20px
+    +r($desktop)
+      font-size: 13.5px
     i
       display: block
       margin-right: 10px
+      background-size: cover
+      width: 33px
+      height: 33px
+      +r($desktop)
+        width: 23px
+        height: 23px
     .i-whatsapp
-      +s('whatsapp')
+      background-image: url('../img/icons/whatsapp.png')
     .i-telegram
-      +s('telegram')
+      background-image: url('../img/icons/telegram.png')
     .i-viber
-      +s('viber')
+      background-image: url('../img/icons/viber.png')
 			

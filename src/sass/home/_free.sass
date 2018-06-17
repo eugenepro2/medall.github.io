@@ -15,6 +15,9 @@
 	h2
 		font-size: 55px
 		margin-bottom: 35px
+		+r($desktop)
+			font-size: 37.5px
+			margin-bottom: 25px
 		+r($tablet)
 			font-size: 45px
 			margin-bottom: 55px
@@ -28,6 +31,9 @@
 		font-size: 21.5px
 		line-height: 1.4
 		margin-bottom: 50px
+		+r($desktop)
+			font-size: 14.5px
+			margin-bottom: 30px
 		+r($tablet)
 			margin-bottom: 30px
 		+r($mobile)
@@ -45,10 +51,19 @@
 				color: $white
 				@extend .roboto
 				font-weight: 300
+			+r($desktop)
+				height: 45px
+				font-size: 12.5px
+				width: 300px
+				margin-right: 13px
+				margin-bottom: 30px
 			+r($mobile)
 				width: 100%
 		button
 			width: 430px
+			+r($desktop)
+				width: 300px
+				height: 55px
 			+r($tablet)
 				width: 345px
 				height: 80px

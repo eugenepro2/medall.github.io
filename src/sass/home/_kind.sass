@@ -11,6 +11,8 @@
 		margin-bottom: 10px
 		+center
 		flex-direction: column
+		+r($desktop)
+			height: 560px
 		+r($tablet)
 			width: 100%
 			height: 620px
@@ -22,20 +24,21 @@
 			font-size: 90px
 			color: $white
 			margin-bottom: 60px
-			+r(1199)
-				font-size: 50px
+			+r($desktop)
+				font-size: 60px
+				margin-bottom: 40px
 			+r($tablet)
 				font-size: 70px
 				margin-bottom: 50px
 		ul
 			width: 70%
 			display: inline-block
-			+r(1279)
-				width: 100%
 			li
 				display: inline-block
 				margin-bottom: 20px
 				margin-right: 30px
+				+r($desktop)
+					margin-bottom: 15px
 				a
 					color: rgba(255, 255, 255, 0.6)
 					line-height: 1.8px
@@ -43,20 +46,23 @@
 					text-decoration: none
 					position: relative
 					+tr
-					+r(1279)
-						font-size: 16px
+					+r($desktop)
+						font-size: 17px
 					+r($tablet)
 						font-size: 25px
 					&:before
 						content: '/'
 						position: absolute
 						right: -20px
-						top: 15px
+						top: 50%
+						transform: translateY(-50%)
 					&:hover
 						color: $white
 	&__tabs
 		width: 50%
 		height: 830px
+		+r($desktop)
+			height: 560px
 		+r($tablet)
 			width: 100%
 			height: 850px
@@ -66,6 +72,8 @@
 		width: calc(25% - 5px)
 		height: 440px
 		display: block
+		+r($desktop)
+			height: 300px
 		+r($tablet)
 			height: 360px
 			width: calc(50% - 10px)
@@ -86,7 +94,7 @@
 				left: 50px
 				color: $white
 				font-size: 75px
-				+r(1439)
+				+r($desktop)
 					font-size: 50px
 				+r($mobile)
 					font-size: 28px
@@ -101,20 +109,22 @@
 		&:nth-last-child(-n+2)
 			article h1
 				font-size: 55px
-				+r(1439)
-					font-size: 40px
+				+r($desktop)
+					font-size: 37.5px
 				+r($mobile)
 					font-size: 28px
 
 .tabs
 	margin-top: 30px
+	+r($desktop)
+		margin-top: 20px
 	&__caption
 		display: flex
 		justify-content: space-between
 		margin-left: 50px
 		margin-right: 60px
-		+r(1439)
-			margin-left: 20px
+		+r($desktop)
+			margin-left: 33px
 		+r($tablet)
 			margin: 0 30px
 		li
@@ -122,32 +132,24 @@
 			color: #b8b9bd
 			display: flex
 			align-items: center
-			+r(1679)
-				font-size: 24px
-			+r(1439)
-				font-size: 22px
-			+r(1279)
-				font-size: 16px
+			+r($desktop)
+				font-size: 20px
 			+r($tablet)
 				font-size: 24.5px
 			i
 				font-size: 35px
 				margin-right: 15px
-				+r(1679)
+				+r($desktop)
+					font-size: 23px
 					margin-right: 10px
-					font-size: 30px
-				+r(1199)
-					font-size: 25px
 				+r($tablet)
 					font-size: 27px
 			&.active
 				color: $black-four
 	&__content
 		padding: 80px 100px
-		+r(1679)
-			padding: 50px 70px
-		+r(1439)
-			padding: 20px
+		+r($desktop)
+			padding: 40px 65px
 		+r($tablet)
 			padding: 30px
 	&__price
@@ -192,10 +194,8 @@
 			flex-wrap: wrap
 			align-items: center
 			padding: 15px 0
-			+r(1679)
-				padding: 10px 0
-			+r(1279)
-				padding: 5px 0
+			+r($desktop)
+				padding: 11px 0
 			+r($tablet)
 				padding: 20px 0
 			header
@@ -203,12 +203,9 @@
 				height: 100px
 				margin-right: 20px
 				overflow: hidden
-				+r(1439)
-					width: 120px
-					height: 90px
-				+r(1199)
-					width: 100px
-					height: 75px
+				+r($desktop)
+					width: 95px
+					height: 65px
 				+r($tablet)
 					width: 140px
 					height: 100px
@@ -219,10 +216,8 @@
 				h1
 					font-size: 22px
 					color: $black-four
-					+r(1679)
-						font-size: 20px
-					+r(1199)
-						font-size: 16px
+					+r($desktop)
+						font-size: 15px
 					+r($tablet)
 						font-size: 22px
 	&__before

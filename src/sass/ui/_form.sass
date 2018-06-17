@@ -14,7 +14,10 @@ form
     @extend .roboto
     &:not(:last-child)
       margin-bottom: 20px
-    +r(1439)
-      font-size: 16px
+      +r($desktop)
+        margin-bottom: 13px
+    +r($desktop)
+      font-size: 12.5px
+      height: 54px
   button
     width: 100%
