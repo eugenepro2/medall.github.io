@@ -155,34 +155,46 @@
 	&__price
 		a
 			text-decoration: none
+			display: flex
+			justify-content: space-between
+			align-items: flex-end
+			&:not(:first-child)
+				margin-top: 30px
+			&:not(:last-child)
+				border-bottom: solid 1px #e1e1e1
 		p
 			font-size: 22px
 			line-height: 1.27
 			color: #3b3b3b
 			margin-bottom: 40px
 			font-weight: 400
-			+r(1679)
-				margin-bottom: 20px
-				font-size: 20px
-			+r(1279)
-				font-size: 18px
-			+r(1199)
-				font-size: 13px
+			display: inline-block
+			+r($desktop)
+				font-size: 16.5px
+				margin-bottom: 30px
 			+r($tablet)
 				font-size: 28px
 			i
 				color: #b9babe
 				letter-spacing: 2.2px
-			span
-				float: right
-				font-size: 22px
-				font-weight: bold
+				display: inline-block
+				border-bottom: dotted 1px
+		span
+			float: right
+			font-size: 22px
+			font-weight: bold
+			display: block
+			color: $black-four
+			margin-bottom: 40px
+			white-space: nowrap
+			+r($desktop)
+				font-size: 16.5px
+				margin-bottom: 30px
 		hr
 			border: solid 1px #e1e1e1
 			opacity: 0.9
 			margin-bottom: 50px
-			+r(1679)
-				margin-bottom: 30px
+			width: 100%
 	&__article
 		a
 			text-decoration: none

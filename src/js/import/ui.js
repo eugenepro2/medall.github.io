@@ -30,6 +30,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 // Kind();
 
 
+
 //SlideOut
 var slideout = new Slideout({
   'panel': document.getElementById('panel'),
