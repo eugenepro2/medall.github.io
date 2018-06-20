@@ -114,212 +114,212 @@
 				+r($mobile)
 					font-size: 28px
 
-.tabs
-	margin-top: 30px
-	+r($desktop)
-		margin-top: 20px
-	&__caption
-		display: flex
-		justify-content: space-between
-		margin-left: 50px
-		margin-right: 60px
+	.tabs
+		margin-top: 30px
 		+r($desktop)
-			margin-left: 33px
-		+r($tablet)
-			margin: 0 30px
-		li
-			font-size: 29.5px
-			color: #b8b9bd
-			display: flex
-			align-items: center
-			+r($desktop)
-				font-size: 20px
-			+r($tablet)
-				font-size: 24.5px
-			i
-				font-size: 35px
-				margin-right: 15px
-				+r($desktop)
-					font-size: 23px
-					margin-right: 10px
-				+r($tablet)
-					font-size: 27px
-			&.active
-				color: $black-four
-	&__content
-		padding: 80px 100px
-		+r($desktop)
-			padding: 40px 65px
-		+r($tablet)
-			padding: 30px
-	&__price
-		a
-			text-decoration: none
+			margin-top: 20px
+		&__caption
 			display: flex
 			justify-content: space-between
-			align-items: flex-end
-			&:not(:first-child)
-				margin-top: 30px
-			&:not(:last-child)
-				border-bottom: solid 1px #e1e1e1
-		p
-			font-size: 22px
-			line-height: 1.27
-			color: #3b3b3b
-			margin-bottom: 40px
-			font-weight: 400
-			display: inline-block
+			margin-left: 50px
+			margin-right: 60px
 			+r($desktop)
-				font-size: 16.5px
-				margin-bottom: 30px
+				margin-left: 33px
 			+r($tablet)
-				font-size: 28px
-			i
-				color: #b9babe
-				letter-spacing: 2.2px
-				display: inline-block
-				border-bottom: dotted 1px
-		span
-			float: right
-			font-size: 22px
-			font-weight: bold
-			display: block
-			color: $black-four
-			margin-bottom: 40px
-			white-space: nowrap
-			+r($desktop)
-				font-size: 16.5px
-				margin-bottom: 30px
-		hr
-			border: solid 1px #e1e1e1
-			opacity: 0.9
-			margin-bottom: 50px
-			width: 100%
-	&__article
-		a
-			text-decoration: none
-			display: block
-			&:not(:last-child)
-				border-bottom: solid 1px #e1e1e1
-		&__block
-			display: flex
-			flex-wrap: wrap
-			align-items: center
-			padding: 15px 0
-			+r($desktop)
-				padding: 11px 0
-			+r($tablet)
-				padding: 20px 0
-			header
-				width: 140px
-				height: 100px
-				margin-right: 20px
-				overflow: hidden
+				margin: 0 30px
+			li
+				font-size: 29.5px
+				color: #b8b9bd
+				display: flex
+				align-items: center
 				+r($desktop)
-					width: 95px
-					height: 65px
+					font-size: 20px
 				+r($tablet)
-					width: 140px
-					height: 100px
-				img
-					width: 100%
-			section
-				flex: 1
-				h1
-					font-size: 22px
-					color: $black-four
+					font-size: 24.5px
+				i
+					font-size: 35px
+					margin-right: 15px
 					+r($desktop)
-						font-size: 15px
+						font-size: 23px
+						margin-right: 10px
 					+r($tablet)
-						font-size: 22px
-	&__before
-		h2
-			margin-bottom: 25px
+						font-size: 27px
+				&.active
+					color: $black-four
+		&__content
+			padding: 80px 100px
 			+r($desktop)
-				font-size: 16.5px
-		&__photos
-			display: flex
-			justify-content: space-between
-			flex-wrap: wrap
-			img
-				width: calc(25% - 9px)
-				margin-bottom: 15px
-				+r($desktop)
-					height: 125px
-				+r($tablet)
-					height: 170px
-	&__review
-		h2
-			font-size: 22px
-			color: $black-four
-			margin-bottom: 40px
-			+r($desktop)
-				font-size: 16.5px
-				margin-bottom: 30px
-		&__prev, &__next
-			font-size: 22px
-			color: $black-four
-			font-weight: 700
-			display: inline-block
-			margin-top: 100px
-			+r($desktop)
-				font-size: 16.5px
-				margin-top: 50px
+				padding: 40px 65px
 			+r($tablet)
-				font-size: 22px
-				margin-top: 100px
-		&__next
-			float: right
-		.review-slider
-			padding: 40px
-			+r($desktop)
 				padding: 30px
-			+r($tablet)
-				padding: 40px
-			&:before, &:after
-				content: $icon-quote
-				position: absolute
-				font-size: 150px
-				color: #e7ecf2
-				z-index: -1
-				@extend %icon
-			&:before
-				top: 0
-				left: 0
-				transform: scale(-1, 1)
-			&:after
-				right: 0
-				bottom: 0
-				transform: rotate(180deg) scale(-1, 1)
-			h3
-				font-weight: normal
-				@extend .roboto
-				font-size: 18px
-				margin-bottom: 10px
-				b
-					@extend .ubuntu
-				+r($desktop)
-					font-size: 13.5px
+		&__price
+			a
+				text-decoration: none
+				display: flex
+				justify-content: space-between
+				align-items: flex-end
+				&:not(:first-child)
+					margin-top: 30px
+				&:not(:last-child)
+					border-bottom: solid 1px #e1e1e1
 			p
-				@extend .roboto
-				font-weight: 300
-				line-height: 1.44
-				font-size: 18px
+				font-size: 22px
+				line-height: 1.27
+				color: #3b3b3b
 				margin-bottom: 40px
+				font-weight: 400
+				display: inline-block
 				+r($desktop)
-					font-size: 13.5px
+					font-size: 16.5px
 					margin-bottom: 30px
 				+r($tablet)
-					font-size: 20px
-					margin-bottom: 40px
-			.item__info
+					font-size: 28px
+				i
+					color: #b9babe
+					letter-spacing: 2.2px
+					display: inline-block
+					border-bottom: dotted 1px
+			span
+				float: right
+				font-size: 22px
+				font-weight: bold
+				display: block
+				color: $black-four
+				margin-bottom: 40px
+				white-space: nowrap
+				+r($desktop)
+					font-size: 16.5px
+					margin-bottom: 30px
+			hr
+				border: solid 1px #e1e1e1
+				opacity: 0.9
+				margin-bottom: 50px
+				width: 100%
+		&__article
+			a
+				text-decoration: none
+				display: block
+				&:not(:last-child)
+					border-bottom: solid 1px #e1e1e1
+			&__block
 				display: flex
-				&__block
-					width: 33.33%
-					p
-						margin-bottom: 0px
-					span
-						@extend .ubuntu
-						font-weight: 700
+				flex-wrap: wrap
+				align-items: center
+				padding: 15px 0
+				+r($desktop)
+					padding: 11px 0
+				+r($tablet)
+					padding: 20px 0
+				header
+					width: 140px
+					height: 100px
+					margin-right: 20px
+					overflow: hidden
+					+r($desktop)
+						width: 95px
+						height: 65px
+					+r($tablet)
+						width: 140px
+						height: 100px
+					img
+						width: 100%
+				section
+					flex: 1
+					h1
+						font-size: 22px
+						color: $black-four
 						+r($desktop)
-							font-size: 13.5px
+							font-size: 15px
+						+r($tablet)
+							font-size: 22px
+		&__before
+			h2
+				margin-bottom: 25px
+				+r($desktop)
+					font-size: 16.5px
+			&__photos
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				img
+					width: calc(25% - 9px)
+					margin-bottom: 15px
+					+r($desktop)
+						height: 125px
+					+r($tablet)
+						height: 170px
+		&__review
+			h2
+				font-size: 22px
+				color: $black-four
+				margin-bottom: 40px
+				+r($desktop)
+					font-size: 16.5px
+					margin-bottom: 30px
+			&__prev, &__next
+				font-size: 22px
+				color: $black-four
+				font-weight: 700
+				display: inline-block
+				margin-top: 100px
+				+r($desktop)
+					font-size: 16.5px
+					margin-top: 50px
+				+r($tablet)
+					font-size: 22px
+					margin-top: 100px
+			&__next
+				float: right
+			.review-slider
+				padding: 40px
+				+r($desktop)
+					padding: 30px
+				+r($tablet)
+					padding: 40px
+				&:before, &:after
+					content: $icon-quote
+					position: absolute
+					font-size: 150px
+					color: #e7ecf2
+					z-index: -1
+					@extend %icon
+				&:before
+					top: 0
+					left: 0
+					transform: scale(-1, 1)
+				&:after
+					right: 0
+					bottom: 0
+					transform: rotate(180deg) scale(-1, 1)
+				h3
+					font-weight: normal
+					@extend .roboto
+					font-size: 18px
+					margin-bottom: 10px
+					b
+						@extend .ubuntu
+					+r($desktop)
+						font-size: 13.5px
+				p
+					@extend .roboto
+					font-weight: 300
+					line-height: 1.44
+					font-size: 18px
+					margin-bottom: 40px
+					+r($desktop)
+						font-size: 13.5px
+						margin-bottom: 30px
+					+r($tablet)
+						font-size: 20px
+						margin-bottom: 40px
+				.item__info
+					display: flex
+					&__block
+						width: 33.33%
+						p
+							margin-bottom: 0px
+						span
+							@extend .ubuntu
+							font-weight: 700
+							+r($desktop)
+								font-size: 13.5px

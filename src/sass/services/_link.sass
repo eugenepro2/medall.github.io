@@ -1,0 +1,36 @@
+.services__link
+  margin-bottom: 100px
+  &__row
+    display: flex
+    justify-content: space-between
+  &__block
+    display: block
+    height: 240px
+    width: 100%
+    text-decoration: none
+    color: $white
+    position: relative
+    +tr
+    +cover
+    &:before
+      content: ''
+      +coverdiv
+      background-image: linear-gradient(128deg, $blue2, $aqua 97%)
+      opacity: 0
+      +tr
+    &:not(:last-child)
+      margin-right: 10px
+    p 
+      font-size: 30px
+      font-weight: bold
+      position: absolute
+      bottom: 25px
+      left: 30px
+      +tr
+    &.active
+      &:before
+        opacity: 0.65
+      p
+        bottom: 48%
+        transform: translateY(50%)
+
