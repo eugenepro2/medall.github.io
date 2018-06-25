@@ -39,10 +39,10 @@ body
 +r($mobile)
 	.hidden-xs
 		display: none !important
-@media only screen and (min-width: 768px) and (max-width: 1023px)
+@media only screen and (min-width: 768px) and (max-width: 1024px)
 	.hidden-sm
 		display: none !important
-+rmin(1024)
++rmin(1025)
 	.hidden-md
 		display: none !important
 
@@ -96,3 +96,7 @@ body
     .i-viber
       background-image: url('../img/icons/viber.png')
 			
+.tabs__content
+ display: none
+.tabs__content:first-of-type
+ display: block

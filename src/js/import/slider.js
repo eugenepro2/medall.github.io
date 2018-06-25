@@ -1,4 +1,5 @@
 import 'owl.carousel';
+import Swiper from 'swiper';
 
 
 let certificate = $('.certificate-slider');
@@ -42,3 +43,6 @@ $('.tabs__review__next').click(function() {
 $('.tabs__review__prev').click(function() {
   tabsReview.trigger('prev.owl.carousel');
 });
+
+
+

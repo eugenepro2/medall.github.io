@@ -1,11 +1,30 @@
 .free
-	background-image: url('../img/bg-free.jpg')
-	background-size: cover
 	padding-top: 275px
 	padding-bottom: 80px
 	color: $white
-	background-position: 50% 50%
 	overflow: hidden
+	position: relative
+	.container-fluid
+		position: relative
+		z-index: 10
+	&__back
+		content: ''
+		+coverdiv
+		+cover
+		background-image: url('../img/bg-free-1.png')
+		z-index: 2
+		transition: background 1.5s
+		&.active
+			background-image: url('../img/bg-free.png')
+	&__woman
+		+coverdiv
+		+cover
+		background-image: url('../img/bg-free-woman.png')
+		z-index: 1
+		opacity: 0
+		transition: opacity 1.5s
+		&.active
+			opacity: 1
 	+r($desktop)
 		margin-top: 70px
 		padding-top: 150px
@@ -15,7 +34,8 @@
 		padding-bottom: 40px
 	+r($mobile)
 		background-image: url('../img/bg-free-m2.jpg')
-		padding-top: 70px
+		padding-top: 120px
+		margin-top: 0
 	h2
 		font-size: 55px
 		margin-bottom: 35px

@@ -71,7 +71,12 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.3.5",
+    "air-datepicker": "^2.2.3",
+    "bounce.js": "^0.8.2",
+    "clip-path": "^1.1.0",
+    "gsap": "^2.0.1",
     "owl.carousel": "^2.3.4",
-    "slideout": "^1.0.1"
+    "slideout": "^1.0.1",
+    "swiper": "^4.3.3"
   }
 }

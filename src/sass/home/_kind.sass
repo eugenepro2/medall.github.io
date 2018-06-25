@@ -9,6 +9,8 @@
 		background-size: cover
 		background-repeat: no-repeat
 		margin-bottom: 10px
+		position: relative
+		overflow: hidden
 		+center
 		flex-direction: column
 		+r($desktop)
@@ -58,6 +60,10 @@
 						transform: translateY(-50%)
 					&:hover
 						color: $white
+		&__new
+			+coverdiv
+			+cover
+			width: 100% !important
 	&__tabs
 		width: 50%
 		height: 830px
@@ -72,6 +78,8 @@
 		width: calc(25% - 5px)
 		height: 440px
 		display: block
+		position: relative
+		overflow: hidden
 		+r($desktop)
 			height: 300px
 		+r($tablet)
@@ -83,6 +91,11 @@
 			height: 150px
 			margin-right: 0 !important
 			margin-bottom: 0
+		&__new
+			+coverdiv
+			+cover
+			width: 100% !important
+			z-index: 1
 		article
 			height: 100%
 			background-size: cover

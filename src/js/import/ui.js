@@ -1,44 +1,29 @@
 import '@fancyapps/fancybox';
 import Slideout from 'slideout';
+import datepicker from 'air-datepicker';
+
+$('.datepicker-here').datepicker({
+  inline: true
+});
 
 //Tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
   $(this)
     .addClass('active').siblings().removeClass('active')
-    .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+    .closest('div.tabs').children('div.tabs__content').fadeOut(500).eq($(this).index()).delay(450).fadeIn(500);
 });
-
-// //Kind
-// function Kind() {
-//   $('.kind__big, .kind__tabs, .kind__small').each(function(i) {
-//     if ($(window).width() < 1024) {
-//       return false;
-//     }
-//     let w;
-//     if (i < 5) {
-//       w = $(this).width();
-//     } else{
-//       w = $(this).prev().width();
-//     }
-//     $(this).height(w);
-
-//   });
-// }
-// $(window).on('resize', function() {
-//   Kind();
-// });
-// Kind();
 
 
 
 //SlideOut
-var slideout = new Slideout({
+let slideout = new Slideout({
   'panel': document.getElementById('panel'),
   'menu': document.getElementById('menu'),
   'padding': 256,
   'tolerance': 70
 });
 
+slideout.disableTouch();
 $('.open-menu').on('click', function() {
   slideout.toggle();
 });

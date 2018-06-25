@@ -1,10 +1,12 @@
 section.kind
   .container-fluid
-    .col-xs-12
-      .heading
-        h2 Виды пластической хирургии
+    .row
+      .col-xs-12
+        .heading
+          h2 Виды пластической хирургии
   .kind__row
-    article.kind__big(style="background-image: url('img/kind/1.jpg')")
+    article.kind__big.kind__click(style="background-image: url('img/kind/1.jpg')" data-img='img/kind/1.jpg') 
+      .kind__big__new
       div
         h1 Пластика груди
         ul
@@ -125,19 +127,24 @@ section.kind
           .tabs__review__next Следующий отзыв >
                 
 
-    a.kind__small.hidden-sm.hidden-md(href="#")
+    a.kind__click.kind__small.hidden-sm.hidden-md(href="#" data-img='img/kind/1.jpg')
+      .kind__small__new
       article(style="background-image: url('img/kind/1.jpg')")
         h1 Пластика груди
-    a.kind__small(href="#")
+    a.kind__click.kind__small(href="#" data-img="img/kind/2.jpg")
+      .kind__small__new
       article(style="background-image: url('img/kind/2.jpg')")
         h1 Лицо
-    a.kind__small(href="#")
+    a.kind__click.kind__small(href="#" data-img="img/kind/3.jpg")
+      .kind__small__new
       article(style="background-image: url('img/kind/3.jpg')")
         h1 Тело
-    a.kind__small(href="#")
+    a.kind__click.kind__small(href="#" data-img="img/kind/4.jpg")
+      .kind__small__new
       article(style="background-image: url('img/kind/4.jpg')")
         h1 Интимная<br> пластика 
-    a.kind__small(href="#")
+    a.kind__click.kind__small(href="#" data-img="img/kind/5.jpg")
+      .kind__small__new
       article(style="background-image: url('img/kind/5.jpg')")
         h1 Лазерное<br> удаление
       

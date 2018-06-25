@@ -1,0 +1,48 @@
+@import header
+@import info
+@import spec
+
+.doctor__before
+  margin-top: 100px
+  +r($mobile)
+    margin-top: 30px
+
+.doctor__another__row
+  display: flex
+  margin-left: 90px
+  +r($tablet)
+    margin-left: 0
+  +r($mobile)
+    flex-direction: column
+  article
+    margin-right: 120px
+    +rmin(1920)
+      margin-right: 180px
+    +r($tablet)
+      margin-right: 0
+      flex-direction: column
+      width: 50%
+    header
+      height: 260px
+      +rmin(1920)
+        height: 400px
+      +r($tablet)
+        width: 100%
+    section
+      +r($tablet)
+        width: 100%
+      .btn
+        width: 190px
+        height: 30px
+        font-size: 9px
+        left: 50%
+        transform: translateX(-50%)
+        +rmin(1920)
+          width: 280px
+          height: 45px
+          font-size: 14px
+        i
+          font-size: 14px
+          +rmin(1920)
+            font-size: 21px
+            margin-right: 11px

@@ -8,6 +8,8 @@
     padding: 50px 0
     position: relative
     overflow: hidden
+    .col-xs-12
+      position: relative
   &__row
     background-color: #e7ecf2
     height: 280px
@@ -18,7 +20,7 @@
     +r($desktop)
       margin-top: 18px
     +r($mobile)
-      margin-top: 29px
+      margin-top: 0
   .item
     background: #ffffff
     padding: 10px
@@ -42,7 +44,7 @@
       overflow: visible
   &__prev, &__next
     position: absolute
-    top: 55%
+    top: 50%
     transform: translateY(-50%)
     width: 55px
     height: 55px

@@ -1,8 +1,16 @@
 .services__link
   margin-bottom: 100px
+  +rmin(1920)
+    margin-bottom: 140px
+  +r($tablet)
+    margin-bottom: 60px
+  +r($mobile)
+    margin-bottom: 30px
   &__row
     display: flex
     justify-content: space-between
+    +r($mobile)
+      flex-direction: column
   &__block
     display: block
     height: 240px
@@ -12,6 +20,15 @@
     position: relative
     +tr
     +cover
+    +rmin(1920)
+      height: 360px
+    +r($tablet)
+      height: 160px
+    +r($mobile)
+      height: 50px
+      margin-bottom: 10px
+      display: flex
+      align-items: center
     &:before
       content: ''
       +coverdiv
@@ -27,6 +44,17 @@
       bottom: 25px
       left: 30px
       +tr
+      +rmin(1920)
+        font-size: 45px
+      +r($tablet)
+        font-size: 24px
+        left: 10px
+      +r($mobile)
+        transform: translate(0) !important
+        position: static
+        padding-left: 0
+        font-size: 20px
+        padding-left: 10px
     &.active
       &:before
         opacity: 0.65
