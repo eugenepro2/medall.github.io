@@ -29,11 +29,19 @@
   &__quote
     display: flex
     align-items: center
-    padding: 0 130px
+    padding: 20px 130px
+    background: url(../img/bg-subscribe.jpg)
+    position: relative
+    left: 50%
+    right: 50%
+    margin-left: -50vw
+    margin-right: -50vw
+    box-sizing: border-box
+    width: 100vw
     +r($tablet)
-      padding: 0 40px
+      padding: 20 40px
     +r($mobile)
-      padding: 0 20px
+      padding: 20 20px
       flex-direction: column
     &__image
       width: 150px
@@ -56,13 +64,12 @@
       +rmin(1920)
         padding: 40px 20px
         margin-right: 100px
-        
       &:before, &:after
         content: $icon-quote
         position: absolute
         font-size: 50px
         color: #e7ecf2
-        z-index: -1
+        z-index: 2
         @extend %icon
         +rmin(1920)
           font-size: 77px
@@ -78,6 +85,8 @@
         font-size: 14px
         font-weight: 300
         color: #3f3f3f
+        position: relative
+        z-index: 10
         +rmin(1920)
           font-size: 21px
 

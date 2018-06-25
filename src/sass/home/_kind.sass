@@ -175,6 +175,9 @@
 					margin-top: 30px
 				&:not(:last-child)
 					border-bottom: solid 1px #e1e1e1
+				&:hover
+					p
+						color: $blue
 			p
 				font-size: 22px
 				line-height: 1.27
@@ -182,6 +185,7 @@
 				margin-bottom: 40px
 				font-weight: 400
 				display: inline-block
+				+tr
 				+r($desktop)
 					font-size: 16.5px
 					margin-bottom: 30px
@@ -214,6 +218,10 @@
 				display: block
 				&:not(:last-child)
 					border-bottom: solid 1px #e1e1e1
+				+tr
+				&:hover
+					h1
+						color: $blue
 			&__block
 				display: flex
 				flex-wrap: wrap

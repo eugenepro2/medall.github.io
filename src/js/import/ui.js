@@ -1,6 +1,15 @@
 import '@fancyapps/fancybox';
 import Slideout from 'slideout';
-import datepicker from 'air-datepicker';
+import 'air-datepicker';
+import Inputmask from 'inputmask';
+
+
+if ($('#phone').length) {
+  Inputmask({'mask': '+7(999) 999 99 99'}).mask(document.getElementById('phone'));  
+}
+
+
+
 
 $('.datepicker-here').datepicker({
   inline: true
