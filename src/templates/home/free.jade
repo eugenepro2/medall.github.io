@@ -4,9 +4,9 @@ section.free
   .container-fluid
     .row
       .col-xs-12
-        h2 Запишитесь<br> на бесплатную* консультацию
-        p Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:
         form
+          h2 Запишитесь<br> на бесплатную* консультацию
+          p Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:
           .flex
             input#phone(type="tel", name="phone" placeholder="Ваш номер телефона")
             input.hidden-xs(type="text", name="name" placeholder="Ваше имя")
@@ -27,3 +27,19 @@ section.free
                   i.i-viber
                   | Viber
           span * Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.
+        .response
+          .response__block
+            h2 Спасибо!
+            p Мы свяжемся с Вами<br>в течении 30 минут для подтверждения записи.
+          .social__info
+            p Или свяжитесь с нами через:
+            .flex
+              a(href="#")
+                i.i-whatsapp
+                | WhatsApp
+              a(href="#")
+                i.i-telegram
+                | Telegram
+              a(href="#")
+                i.i-viber
+                | Viber

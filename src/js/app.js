@@ -3,6 +3,7 @@ import './import/slider';
 import './import/map';
 import './import/dotted';
 import './import/kind';
+import './import/form';
 
 
 

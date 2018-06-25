@@ -40,6 +40,7 @@
     font-size: 35px
     color: #292929
     margin-bottom: 50px
+    width: 100%
     +r($desktop)
       font-size: 24px
       margin-bottom: 35px
@@ -52,6 +53,7 @@
       text-align: center
   form
     display: flex
+    flex-wrap: wrap
     +r($tablet)
       flex-direction: column
       margin-bottom: 50px
@@ -59,7 +61,7 @@
       width: 430px
       margin-right: 20px
       +r($desktop)
-        width: 300px
+        width: 290px
         margin-right: 13px
         height: 45px
       +r($tablet)
@@ -70,7 +72,7 @@
       width: 280px
       height: 65px
       +r($desktop)
-        width: 190px
+        width: 185px
         height: 45px
       +r($tablet)
         width: 345px
@@ -102,3 +104,7 @@
         i
           font-size: 26px
         &:nth-of-type(1), &:nth-of-type(2)
+  .response__block
+    align-items: flex-start
+    p
+      text-align: left

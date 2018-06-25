@@ -100,6 +100,12 @@
                   <h3>Запишитесь на бесплатную*<br> консультацию</h3><input id="phone" type="tel" name="phone" placeholder="Ваш контактный телефон"><input type="text" name="name" placeholder="Ваше имя"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                   <p>* Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.</p>
                 </form>
+                <div class="response">
+                  <div class="response__block"><i class="icon icon-response-1"></i>
+                    <h2>Спасибо! </h2>
+                    <p>Мы свяжемся с Вами в течении 30 минут для подтверждения записи.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -346,9 +352,9 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Запишитесь<br> на бесплатную* консультацию</h2>
-              <p>Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:</p>
               <form>
+                <h2>Запишитесь<br> на бесплатную* консультацию</h2>
+                <p>Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:</p>
                 <div class="flex"><input id="phone" type="tel" name="phone" placeholder="Ваш номер телефона"><input type="text" name="name" placeholder="Ваше имя" class="hidden-xs"></div>
                 <div class="flex"><button type="submit" class="btn btn-secondary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                   <div class="social__info">
@@ -356,6 +362,16 @@
                     <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
                   </div>
                 </div><span>* Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.</span></form>
+              <div class="response">
+                <div class="response__block">
+                  <h2>Спасибо!</h2>
+                  <p>Мы свяжемся с Вами<br>в течении 30 минут для подтверждения записи.</p>
+                </div>
+                <div class="social__info">
+                  <p>Или свяжитесь с нами через:</p>
+                  <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -366,16 +382,22 @@
         <div class="container-fluid">
           <div class="row bottom-xs">
             <div class="col-md-5 col-sm-7 col-xs-12">
-              <h2>Подпишитесь и получайте наши<br> спецпредложения и акции:</h2>
-              <form><input type="email" name="email" placeholder="Ваш e-mail"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Подписаться</span></button></form>
-            </div>
-            <div class="col-md-5 col-sm-7 col-xs-12">
-              <div class="social__info">
-                <p>Или получайте новости в любимый<br> мессенджер:</p>
-                <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
-              </div>
+              <form>
+                <h2>Подпишитесь и получайте наши<br> спецпредложения и акции:</h2><input type="email" name="email" placeholder="Ваш e-mail"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Подписаться</span></button></form>
+              <div
+                class="response">
+                <div class="response__block"><i class="icon icon-response-2"></i>
+                  <p><b>Теперь Вы Вы будете в курсе всех новостей и  актуальных акций!</b> (или любой другой текст)</p>
+                </div>
             </div>
           </div>
+          <div class="col-md-5 col-sm-7 col-xs-12">
+            <div class="social__info">
+              <p>Или получайте новости в любимый<br> мессенджер:</p>
+              <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
       <!--END Subscribe-->
@@ -471,11 +493,11 @@
           </div>
         </div>
       </footer>
-      </div>
-      <!--END out-->
-      <!--LOAD SCRIPTS-->
-      <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-      <script type="text/javascript" src="js/app.js"></script>
+    </div>
+    <!--END out-->
+    <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 
 </html>

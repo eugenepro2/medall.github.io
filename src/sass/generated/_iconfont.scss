@@ -23,9 +23,11 @@ $icon-mark: "\EA0B";
 $icon-phone: "\EA0C";
 $icon-price: "\EA0D";
 $icon-quote: "\EA0E";
-$icon-review: "\EA0F";
-$icon-telegram: "\EA10";
-$icon-viber: "\EA11";
+$icon-response-1: "\EA0F";
+$icon-response-2: "\EA10";
+$icon-review: "\EA11";
+$icon-telegram: "\EA12";
+$icon-viber: "\EA13";
 
 
 %icon {
@@ -58,6 +60,8 @@ $icon-viber: "\EA11";
 .icon-phone:before { content: $icon-phone; }
 .icon-price:before { content: $icon-price; }
 .icon-quote:before { content: $icon-quote; }
+.icon-response-1:before { content: $icon-response-1; }
+.icon-response-2:before { content: $icon-response-2; }
 .icon-review:before { content: $icon-review; }
 .icon-telegram:before { content: $icon-telegram; }
 .icon-viber:before { content: $icon-viber; }
