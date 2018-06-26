@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 end-xs middle-xs between-xs">
               <div class="open-menu hidden-md hidden-xs"><img src="img/burger.png" alt=""></div>
-              <div class="header__btn"><a href="#" class="btn btn-primary"> <span>Обратный звонок</span></a><a href="#" class="btn btn-primary"> <span>Запись на приём</span></a></div>
+              <div class="header__btn"><a href="#modal-form" data-pop class="btn btn-primary"> <span>Обратный звонок</span></a><a href="#modal-form" data-pop class="btn btn-primary"> <span>Запись на приём</span></a></div>
             </div>
             <div class="col-xs-12 hidden-sm hidden-xs">
               <div class="header__sections">
@@ -493,6 +493,19 @@
           </div>
         </div>
       </footer>
+      <div id="modal-form" class="modal">
+        <div class="modal__block">
+          <div class="modal__block__close"><i class="icon icon-close"></i></div>
+          <form>
+            <h2>Обратный звонок</h2><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
+          <div class="response">
+            <p>Спасибо! Ваше сообщение успешно отрпавлено.</p>
+          </div>
+          <div class="error">
+            <p>Произошла ошибка, пожалуйста повторите позже.</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->

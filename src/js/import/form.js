@@ -19,6 +19,7 @@ function ajaxMail($form) {
       $(this).delay(3000).val('');
     });
   }).fail(function() {
-    console.log('fail');
+    $form.fadeOut(500); 
+    $form.siblings('.error').delay(500).fadeIn();
   });
 }

@@ -68,7 +68,7 @@
             </div>
             <div class="col-md-4 col-sm-12 col-xs-12 end-xs middle-xs between-xs">
               <div class="open-menu hidden-md hidden-xs"><img src="img/burger.png" alt=""></div>
-              <div class="header__btn"><a href="#" class="btn btn-primary"> <span>Обратный звонок</span></a><a href="#" class="btn btn-primary"> <span>Запись на приём</span></a></div>
+              <div class="header__btn"><a href="#modal-form" data-pop class="btn btn-primary"> <span>Обратный звонок</span></a><a href="#modal-form" data-pop class="btn btn-primary"> <span>Запись на приём</span></a></div>
             </div>
             <div class="col-xs-12 hidden-sm hidden-xs">
               <div class="header__sections">
@@ -400,9 +400,9 @@
         <div class="container-fluid">
           <div class="row">
             <div class="col-xs-12">
-              <h2>Запишитесь<br> на бесплатную* консультацию</h2>
-              <p>Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:</p>
               <form>
+                <h2>Запишитесь<br> на бесплатную* консультацию</h2>
+                <p>Укажите свои контактные данные и мы свяжемся<br> с Вами в течении 30 минут:</p>
                 <div class="flex"><input id="phone" type="tel" name="phone" placeholder="Ваш номер телефона"><input type="text" name="name" placeholder="Ваше имя" class="hidden-xs"></div>
                 <div class="flex"><button type="submit" class="btn btn-secondary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                   <div class="social__info">
@@ -410,6 +410,16 @@
                     <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
                   </div>
                 </div><span>* Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.</span></form>
+              <div class="response">
+                <div class="response__block">
+                  <h2>Спасибо!</h2>
+                  <p>Мы свяжемся с Вами<br>в течении 30 минут для подтверждения записи.</p>
+                </div>
+                <div class="social__info">
+                  <p>Или свяжитесь с нами через:</p>
+                  <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -420,111 +430,130 @@
         <div class="container-fluid">
           <div class="row bottom-xs">
             <div class="col-md-5 col-sm-7 col-xs-12">
-              <h2>Подпишитесь и получайте наши<br> спецпредложения и акции:</h2>
-              <form><input type="email" name="email" placeholder="Ваш e-mail"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Подписаться</span></button></form>
+              <form>
+                <h2>Подпишитесь и получайте наши<br> спецпредложения и акции:</h2><input type="email" name="email" placeholder="Ваш e-mail"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Подписаться</span></button></form>
+              <div
+                class="response">
+                <div class="response__block"><i class="icon icon-response-2"></i>
+                  <p><b>Теперь Вы Вы будете в курсе всех новостей и  актуальных акций!</b> (или любой другой текст)</p>
+                </div>
             </div>
-            <div class="col-md-5 col-sm-7 col-xs-12">
-              <div class="social__info">
-                <p>Или получайте новости в любимый<br> мессенджер:</p>
-                <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
-              </div>
+          </div>
+          <div class="col-md-5 col-sm-7 col-xs-12">
+            <div class="social__info">
+              <p>Или получайте новости в любимый<br> мессенджер:</p>
+              <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
             </div>
           </div>
         </div>
-      </section>
-      <!--END Subscribe-->
-      <!--BEGIN Contact-->
-      <section class="contact">
-        <div class="container-fluid contact__top">
-          <div class="row middle-xs">
-            <div class="col-md-6 col-xs-12">
-              <div class="heading">
-                <h2>Контакты наших клиник</h2>
+    </div>
+    </section>
+    <!--END Subscribe-->
+    <!--BEGIN Contact-->
+    <section class="contact">
+      <div class="container-fluid contact__top">
+        <div class="row middle-xs">
+          <div class="col-md-6 col-xs-12">
+            <div class="heading">
+              <h2>Контакты наших клиник</h2>
+            </div>
+          </div>
+          <div class="col-md-6 end-xs hidden-sm hidden-xs"><a href="#" class="contact__link active">Многопрофильная клиника</a><a href="#" class="contact__link">Стоматологические центры</a></div>
+        </div>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="contact__info"><i class="icon icon-phone"></i>
+              <div class="contact__info__block"><a href="tel:+7 (812) 748-31-09">+7 (812) 748-31-09</a>
+                <p>ежедневно с 9:00 до 21:00</p>
               </div>
             </div>
-            <div class="col-md-6 end-xs hidden-sm hidden-xs"><a href="#" class="contact__link active">Многопрофильная клиника</a><a href="#" class="contact__link">Стоматологические центры</a></div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="contact__info"><i class="icon icon-mark"></i>
+              <div class="contact__info__block">
+                <p>Мы находимся: Средний пр., д. 5<br> ст. м. “Василеостровская”, “Спортивная”</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-12">
+            <div class="contact__info"><i class="icon icon-email"></i>
+              <div class="contact__info__block">
+                <p>E-mail: </p><a href="mailto:info@medcentregoroda.ru"> info@medcentregoroda.ru    </a></div>
+            </div>
           </div>
         </div>
-        <hr>
+      </div>
+      <div id="map"></div>
+    </section>
+    <!--END Contact-->
+    <footer class="footer">
+      <div class="footer__top">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-4 col-sm-12">
-              <div class="contact__info"><i class="icon icon-phone"></i>
-                <div class="contact__info__block"><a href="tel:+7 (812) 748-31-09">+7 (812) 748-31-09</a>
-                  <p>ежедневно с 9:00 до 21:00</p>
-                </div>
+            <div class="col-xs-12">
+              <div class="footer__menu">
+                <h2>О медицинском центре</h2>
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">3D-тур</a></li>
+                  <li><a href="#">Лицензии</a></li>
+                  <li><a href="#">Новости</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Вакансии</a></li>
+                  <li><a href="#">Наши партнеры</a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contact__info"><i class="icon icon-mark"></i>
-                <div class="contact__info__block">
-                  <p>Мы находимся: Средний пр., д. 5<br> ст. м. “Василеостровская”, “Спортивная”</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="contact__info"><i class="icon icon-email"></i>
-                <div class="contact__info__block">
-                  <p>E-mail: </p><a href="mailto:info@medcentregoroda.ru"> info@medcentregoroda.ru    </a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="map"></div>
-      </section>
-      <!--END Contact-->
-      <footer class="footer">
-        <div class="footer__top">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-xs-12">
-                <div class="footer__menu">
-                  <h2>О медицинском центре</h2>
-                  <ul>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">3D-тур</a></li>
-                    <li><a href="#">Лицензии</a></li>
-                    <li><a href="#">Новости</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="#">Вакансии</a></li>
-                    <li><a href="#">Наши партнеры</a></li>
-                    <li><a href="#">Контакты</a></li>
-                  </ul>
-                </div>
-                <div class="footer__menu">
-                  <h2>Направления деятельности</h2>
-                  <ul>
-                    <li><a href="#">Цифровая стоматология</a></li>
-                    <li><a href="#">Пластическая хирургия</a></li>
-                    <li><a href="#">Лазерная косметология</a></li>
-                    <li><a href="#">Медицинская косметология</a></li>
-                  </ul>
-                  <ul>
-                    <li><a href="#">Центр флебологии</a></li>
-                    <li><a href="#">Пересадка волос</a></li>
-                    <li><a href="#">Центр клинической диагностики</a></li>
-                    <li><a href="#">Центр снижения веса</a></li>
-                  </ul>
-                </div>
+              <div class="footer__menu">
+                <h2>Направления деятельности</h2>
+                <ul>
+                  <li><a href="#">Цифровая стоматология</a></li>
+                  <li><a href="#">Пластическая хирургия</a></li>
+                  <li><a href="#">Лазерная косметология</a></li>
+                  <li><a href="#">Медицинская косметология</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Центр флебологии</a></li>
+                  <li><a href="#">Пересадка волос</a></li>
+                  <li><a href="#">Центр клинической диагностики</a></li>
+                  <li><a href="#">Центр снижения веса</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="footer__bottom">
-          <div class="container-fluid">
-            <div class="row middle-xs">
-              <div class="col-md-6 col-sm-12 col-xs-12">
-                <div class="logo"><img src="img/logo-footer.png" alt=""></div>
-                <div class="copyright hidden-xs">MEDALL © 2018 г. Санкт-Петербург </div>
-              </div>
-              <div class="col-md-6 end-xs hidden-sm hidden-xs">
-                <p>Многопрофильная клиника «Медицинский Центр Города» </p>
-              </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container-fluid">
+          <div class="row middle-xs">
+            <div class="col-md-6 col-sm-12 col-xs-12">
+              <div class="logo"><img src="img/logo-footer.png" alt=""></div>
+              <div class="copyright hidden-xs">MEDALL © 2018 г. Санкт-Петербург </div>
+            </div>
+            <div class="col-md-6 end-xs hidden-sm hidden-xs">
+              <p>Многопрофильная клиника «Медицинский Центр Города» </p>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
+    <div id="modal-form" class="modal">
+      <div class="modal__block">
+        <div class="modal__block__close"><i class="icon icon-close"></i></div>
+        <form>
+          <h2>Обратный звонок</h2><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
+        <div class="response">
+          <p>Спасибо! Ваше сообщение успешно отрпавлено.</p>
+        </div>
+        <div class="error">
+          <p>Произошла ошибка, пожалуйста повторите позже.</p>
+        </div>
+      </div>
+    </div>
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
