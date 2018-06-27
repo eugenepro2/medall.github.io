@@ -26,6 +26,8 @@
 			font-size: 90px
 			color: $white
 			margin-bottom: 60px
+			position: relative
+			z-index: 10
 			+r($desktop)
 				font-size: 60px
 				margin-bottom: 40px
@@ -35,6 +37,8 @@
 		ul
 			width: 70%
 			display: inline-block
+			position: relative
+			z-index: 10
 			li
 				display: inline-block
 				margin-bottom: 20px
@@ -91,6 +95,10 @@
 			height: 150px
 			margin-right: 0 !important
 			margin-bottom: 0
+		ul
+			display: none
+			position: relative
+			z-index: 10
 		&__new
 			+coverdiv
 			+cover
@@ -107,8 +115,9 @@
 				left: 50px
 				color: $white
 				font-size: 75px
+				z-index: 10
 				+r($desktop)
-					font-size: 50px
+					font-size: 40px
 				+r($mobile)
 					font-size: 28px
 		&:not(:last-child)
@@ -119,13 +128,6 @@
 				width: calc(50% - 10px)
 			+r($mobile)
 				width: 100%
-		&:nth-last-child(-n+2)
-			article h1
-				font-size: 55px
-				+r($desktop)
-					font-size: 37.5px
-				+r($mobile)
-					font-size: 28px
 
 	.tabs
 		margin-top: 30px

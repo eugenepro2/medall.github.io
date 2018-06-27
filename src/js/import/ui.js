@@ -40,3 +40,12 @@ $('.open-menu').on('click', function() {
 $('.slideout-menu a').on('click', function() {
   $(this).siblings('.sub').slideToggle();
 });
+
+
+//Новости
+let servicesCount = $('.news__service').length;
+if(servicesCount === 2) {
+  $('.news__services').width('66.66%');
+} else if(servicesCount === 1) {
+  $('.news__services').width('33.33%');
+}
