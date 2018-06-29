@@ -71,6 +71,9 @@
 	&__tabs
 		width: 50%
 		height: 830px
+		display: none
+		&:first-of-type
+			display: block
 		+r($desktop)
 			height: 560px
 		+r($tablet)
@@ -84,6 +87,7 @@
 		display: block
 		position: relative
 		overflow: hidden
+		cursor: pointer
 		+r($desktop)
 			height: 300px
 		+r($tablet)

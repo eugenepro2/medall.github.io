@@ -1,0 +1,70 @@
+.article
+  background: url('../img/bg-article.jpg')
+  background-repeat: repeat
+  &__block
+    width: 100%
+    max-width: 1040px
+    margin: 0 auto
+    background: #fbfdff
+    padding: 65px 90px
+    margin-bottom: 100px
+    +rmin(1920)
+      max-width: 1540px
+    +r($mobile)
+      padding: 20px
+    h1
+      color: #282828
+      font-size: 24px
+      font-weight: 500
+      margin-bottom: 40px
+      +rmin(1920)
+        font-size: 36px
+    p
+      margin-bottom: 45px
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.57
+      color: #4c4c4c
+      +rmin(1920)
+        font-size: 21px
+    .left
+      float: left
+      margin-right: 30px
+      margin-bottom: 30px
+      width: 440px
+      +rmin(1920)
+        width: 50%
+      +r($mobile)
+        width: 100%
+    &__recomended
+      width: 100%
+      position: relative
+      display: flex
+      justify-content: center
+      margin-bottom: 45px
+      img
+        width: 560px
+        height: 100%
+        +r($mobile)
+          width: 100%
+      span
+        width: 97%
+        box-sizing: border-box
+        padding: 15px 0
+        font-size: 22px
+        background-color: rgba(#59b2d2, 0.85)
+        opacity: 0.85
+        color: $white
+        +center
+        position: absolute
+        bottom: 40px
+        left: 50%
+        transform: translateX(-50%)
+        +rmin(1920)
+          bottom: 100px
+          font-size: 33px
+          height: 103px
+        +r($mobile)	
+          text-align: center
+          width: 100%
+

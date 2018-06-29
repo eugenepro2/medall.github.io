@@ -10,6 +10,7 @@ $(function() {
     let curr = $(this).find('.kind__small__new');
     let smallImage = $(this).attr('data-img');
     let bigImage = $('.kind__big').attr('data-img');
+
     
     curr.css('background-image', `url(${bigImage})`);
     $('.kind__big__new').css('background-image', `url(${smallImage})`);
@@ -37,8 +38,16 @@ $(function() {
     $(this).find('ul').html(bigList);
 
 
-    // let smallHeading = $(this).attr('data-img');
-    // let smallList = $(this).attr('data-img');
+    //Change Tabs
+    let currId = $(this).attr('data-id');
+    let bigId = $('.kind__big').attr('data-id');
+    
+    $(`#kind-${bigId}`).fadeOut(500);
+    $(`#kind-${currId}`).delay(400).fadeIn(500);
+
+    $('.kind__big').attr('data-id', currId);
+    $(this).attr('data-id', bigId);
+
   });
   
 });
