@@ -1,5 +1,3 @@
-//Dotted
-
 function Dotted() {
   $('.tabs__price__block').each(function() {
     let i = $(this).find('i');
@@ -15,3 +13,5 @@ $(window).on('scroll', function() {
 });
 
 Dotted();
+
+module.exports = Dotted;
