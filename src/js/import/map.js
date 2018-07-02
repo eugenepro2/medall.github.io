@@ -19,17 +19,17 @@ ymaps.ready(function()
   var prospEngelsBalloonContent = city + ',<br> м. Озерки / Удельная,<br> Выборгский район,<br> пр. Энгельса, д. 93';
 
   var markerOptions;
-  if ($('.style-2')) {
+  if ($('body').hasClass('style-2')) {
     markerOptions = {
       iconLayout: 'default#image',
       iconImageHref: 'img/marker-2.png',
       iconImageSize: [81, 76],
       iconImageOffset: [-3, -42]
     };  
-  } else{
+  } else if($('body').hasClass('style-1')) {
     markerOptions = {
       iconLayout: 'default#image',
-      iconImageHref: 'img/marker.png',
+      iconImageHref: 'img/marker-1.png',
       iconImageSize: [81, 76],
       iconImageOffset: [-3, -42]
     };  

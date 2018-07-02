@@ -59,33 +59,43 @@
 				float: none
 				font-size: 16.5px
 	&__form
-		background: $white
-		padding: 45px 60px
-		margin-top: 50px
-		+r($desktop)
-			padding: 30px 40px
-			margin-top: 14px
-		form
-			input
-				color: #000000
-				&:hover, &:focus
-					box-shadow: 0px 0px 10px 1px $blue
-			h3
-				font-size: 32px
-				margin-bottom: 35px
-				color: #3f3f3f
-				+r($desktop)
-					font-size: 21.5px
-					margin-bottom: 25px
-					br
-						display: none
-			p
-				margin-top: 30px
-				font-weight: 300
-				@extend .roboto
-				font-size: 18.5px
-				color: $black-three
-				+r($desktop)
-					font-size: 12.5px
-					margin-top: 10px
-			.btn
+		position: absolute
+		top: 0
+		width: 100%
+		z-index: 10
+		&__block
+			background: $white
+			padding: 45px 60px
+			margin-top: 50px
+			+r($desktop)
+				padding: 30px 40px
+				margin-top: 14px
+			form
+				input
+					color: #000000
+					&:hover, &:focus
+						box-shadow: 0px 0px 10px 1px $blue
+				h3
+					font-size: 32px
+					margin-bottom: 35px
+					color: #3f3f3f
+					+r($desktop)
+						font-size: 21.5px
+						margin-bottom: 25px
+						br
+							display: none
+				p
+					margin-top: 30px
+					font-weight: 300
+					@extend .roboto
+					font-size: 18.5px
+					color: $black-three
+					+r($desktop)
+						font-size: 12.5px
+						margin-top: 10px
+				.btn
+
+.style-2
+	.swiper-pagination
+		&-bullet
+			background: $style1
