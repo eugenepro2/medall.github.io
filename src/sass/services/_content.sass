@@ -244,8 +244,9 @@
 					display: block
 					margin-bottom: 15px
 					margin-left: 15px
-					overflow: scroll
-					-webkit-overflow-scrolling: touch
+					+r($tablet)
+						overflow-x: scroll
+						-webkit-overflow-scrolling: touch
 					+r($mobile)
 						display: flex
 						flex-direction: row
@@ -277,8 +278,9 @@
 				.tabs__caption
 					margin-top: 20px
 					margin-left: 23px
-					overflow: scroll
-					-webkit-overflow-scrolling: touch
+					+r($tablet)
+						overflow: scroll
+						-webkit-overflow-scrolling: touch
 					+r($mobile)
 						justify-content: flex-start
 					li
@@ -655,3 +657,7 @@
 
 
 
+.style-2
+	.tabs__price__credit a
+		border-color: $style1
+		color: $style1

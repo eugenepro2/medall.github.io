@@ -1,5 +1,5 @@
-import {TimelineMax} from 'gsap';
-import Dotted from './dotted';
+import {TimelineMax, Bounce} from 'gsap';
+import $ from 'jquery';
 
 $(function() {
   let tl = new TimelineMax();
@@ -41,16 +41,14 @@ $(function() {
     //Change Tabs
     let currId = $(this).attr('data-id');
     let bigId = $('.kind__big').attr('data-id');
+    console.log(currId, bigId);
+    
 
-    $(`#kind-${bigId}`).removeClass('active');
-    $(`#kind-${currId}`).delay(300).addClass('active');
+    $(`.kind-${bigId}`).removeClass('active');
+    $(`.kind-${currId}`).delay(300).addClass('active');
 
     $('.kind__big').attr('data-id', currId);
     $(this).attr('data-id', bigId);
-
-    // setTimeout(function() {
-    //   Dotted();
-    // }, 500);
 
   });
   

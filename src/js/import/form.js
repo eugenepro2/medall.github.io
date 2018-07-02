@@ -1,3 +1,4 @@
+import $ from 'jquery';
 //Ajax отправка формы
 $('form').submit(function(e) {
   e.preventDefault(); 

@@ -1,3 +1,4 @@
+import $ from 'jquery';
 $('[data-pop]').on('click', function() {
   let href = $(this).attr('href');
   $(href).fadeIn();

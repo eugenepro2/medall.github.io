@@ -187,7 +187,7 @@
 				justify-content: space-between
 				align-items: flex-end
 				&:not(:first-child)
-					margin-top: 30px
+					margin-top: 25px
 				&:not(:last-child)
 					border-bottom: solid 1px #e1e1e1
 				&:hover
@@ -359,3 +359,23 @@
 							font-weight: 700
 							+r($desktop)
 								font-size: 13.5px
+
+.kind.style-2
+	display: none
+
+.style-2
+	.kind
+		display: none
+	.kind.style-2
+		display: block
+		.kind
+			&__small
+				width: 100%
+				&__row
+					display: flex
+					width: 100%
+					justify-content: space-between
+					h1
+						font-size: 24px
+						bottom: 40px
+						left: 30px

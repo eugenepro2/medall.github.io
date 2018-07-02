@@ -1,5 +1,6 @@
 import 'owl.carousel';
-import Swiper from 'swiper';
+// import Swiper from 'swiper';
+import $ from 'jquery';
 
 
 let certificate = $('.certificate-slider');

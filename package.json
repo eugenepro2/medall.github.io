@@ -74,6 +74,7 @@
     "air-datepicker": "^2.2.3",
     "bounce.js": "^0.8.2",
     "clip-path": "^1.1.0",
+    "countup": "^1.8.2",
     "gsap": "^2.0.1",
     "inputmask": "^4.0.0",
     "jquery.maskedinput": "^1.4.1",

@@ -3,7 +3,7 @@
     .modal__block__close
       i.icon.icon-close
     form
-      h2 Обратный звонок
+      h2 Запись на консультацию
       input(type="text" placeholder="Имя")
       input#phone(type="tel" placeholder="Телефон")
       button.btn.btn-secondary(type="submit") 
@@ -12,4 +12,27 @@
       p Спасибо! Ваше сообщение успешно отрпавлено.
     .error
       p Произошла ошибка, пожалуйста повторите позже.
+    .policy
+      p Отправляя эту форму, вы соглашаетесь <br>на&nbsp; 
+        a(href="#") обработку персональных данных 
+
+
+
+#modal-callback.modal
+  .modal__block
+    .modal__block__close
+      i.icon.icon-close
+    form
+      h2 Заказ обратного звонка
+      input(type="text" placeholder="Имя")
+      input#phone(type="tel" placeholder="Телефон")
+      button.btn.btn-secondary(type="submit") 
+        span Отправить
+    .response
+      p Спасибо! Ваше сообщение успешно отрпавлено.
+    .error
+      p Произошла ошибка, пожалуйста повторите позже.
+    .policy
+      p Отправляя эту форму, вы соглашаетесь <br>на&nbsp; 
+        a(href="#") обработку персональных данных 
 
