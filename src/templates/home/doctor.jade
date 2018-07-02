@@ -10,18 +10,17 @@ section.home-doctor
             p Проведенных процедур: 
               span <b class="counter" data-count="1048">0</b>
           section
-            img(src="img/doctors/2.jpg", alt="")
-            div
-              h2 Любимая процедура
-              h3 Аппаратная косметология
-          footer
-            .col-sm-6
+            a(href="doctor.html").home-doctor__block
+              img(src="img/doctors/2.jpg", alt="")
               p <b>Пластический хирург</b>, заведующий центром пластической хирургии, кандидат медицинских наук.
-              a(href="#") 
+              span(href="#") 
                 i.icon.icon-calendar
                 | Расписание врача
-            .col-sm-6
-              a.btn.btn-primary(href="#")
-                i.icon.icon-edit
-                span Запиcь на консультацию
-          
+            .home-doctor__services
+              div
+                a(href="services.html")
+                  h2 Любимая процедура
+                  h3 Аппаратная косметология
+              a.btn.btn-primary(data-pop href="#modal-form")
+                  i.icon.icon-edit
+                  span Запиcь на консультацию

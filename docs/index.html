@@ -129,7 +129,7 @@
               </header>
               <section>
                 <p><strong>Пластический хирург</strong>, заведующий центром пластической хирургии, кандидат медицинских наук.</p>
-                <div><a href="#"> <i class="icon icon-calendar"></i>Расписание врача</a></div>
+                <div><span> <i class="icon icon-calendar"></i>Расписание врача</span></div>
                 <div class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></div>
               </section>
             </article>
@@ -141,7 +141,7 @@
               </header>
               <section>
                 <p><strong>Пластический хирург</strong>, заведующий центром пластической хирургии, кандидат медицинских наук.</p>
-                <div><a href="#"> <i class="icon icon-calendar"></i>Расписание врача</a></div>
+                <div><span> <i class="icon icon-calendar"></i>Расписание врача</span></div>
                 <div class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></div>
               </section>
             </article>
@@ -153,7 +153,7 @@
               </header>
               <section>
                 <p><strong>Пластический хирург</strong>, заведующий центром пластической хирургии, кандидат медицинских наук.</p>
-                <div><a href="#"> <i class="icon icon-calendar"></i>Расписание врача</a></div>
+                <div><span> <i class="icon icon-calendar"></i>Расписание врача</span></div>
                 <div class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></div>
               </section>
             </article>
@@ -173,20 +173,19 @@
                 <p>Стаж: <span><b class="counter" data-count="10">0</b> лет</span></p>
                 <p>Проведенных процедур: <span><b class="counter" data-count="1048">0</b></span></p>
               </header>
-              <section><img src="img/doctors/2.jpg" alt="">
-                <div>
-                  <h2>Любимая процедура</h2>
-                  <h3>Аппаратная косметология</h3>
-                </div>
-              </section>
-              <footer>
-                <div class="col-sm-6">
-                  <p><b>Пластический хирург</b>, заведующий центром пластической хирургии, кандидат медицинских наук.</p><a href="#"> <i class="icon icon-calendar"></i>Расписание врача</a></div>
-                <div class="col-sm-6"><a href="#" class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></a></div>
-              </footer>
-            </article>
-          </div>
+              <section><a href="doctor.html" class="home-doctor__block"><img src="img/doctors/2.jpg" alt=""><p><b>Пластический хирург</b>, заведующий центром пластической хирургии, кандидат медицинских наук.</p><span href="#"> <i class="icon icon-calendar"></i>Расписание врача</span></a>
+                <div
+                  class="home-doctor__services">
+                  <div>
+                    <a href="services.html">
+                      <h2>Любимая процедура</h2>
+                      <h3>Аппаратная косметология</h3>
+                    </a>
+                  </div><a data-pop href="#modal-form" class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></a></div>
+          </section>
+          </article>
         </div>
+      </div>
       </div>
     </section>
     <!--END Doctor-->
@@ -1570,7 +1569,7 @@
               <div class="flex"><button type="submit" class="btn btn-secondary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                 <div class="social__info">
                   <p>Или свяжитесь с нами через:</p>
-                  <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
+                  <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="tg://resolve?domain=medallbot"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
                 </div>
               </div><span>* Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.</span></form>
             <div class="response">
@@ -1580,7 +1579,7 @@
               </div>
               <div class="social__info">
                 <p>Или свяжитесь с нами через:</p>
-                <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="#"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
+                <div class="flex"><a href="#"><i class="i-whatsapp"></i>WhatsApp</a><a href="tg://resolve?domain=medallbot"><i class="i-telegram"></i>Telegram</a><a href="#"><i class="i-viber"></i>Viber</a></div>
               </div>
             </div>
           </div>
@@ -1741,6 +1740,8 @@
     <!--LOAD SCRIPTS-->
     <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script type="text/javascript" src="js/app.js"></script>
+    <script src="//unpkg.com/@textback/notification-widget@latest/build/index.js"></script>
+    <tb-notification-widget widget-id="eff3b336-86db-78c1-87e0-01645005b479"></tb-notification-widget>
   </body>
 
 </html>
