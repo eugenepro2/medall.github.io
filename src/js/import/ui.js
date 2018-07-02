@@ -4,6 +4,7 @@ import Slideout from 'slideout';
 import 'air-datepicker';
 import Inputmask from 'inputmask';
 
+
 //Если элемент в ViewPort
 $.fn.isInViewport = function() {
   var elementTop = $(this).offset().top;
@@ -44,6 +45,18 @@ $(window).on('resize scroll', function() {
   }
 
 });
+
+
+//Плавный скролл при загрузке страницы
+setTimeout(function() {
+  let top = $(location.hash).offset().top;
+
+  $('html, body').animate({
+    scrollTop: top
+  }, 1000);  
+}, 1500);
+
+
 
 
 
@@ -102,4 +115,5 @@ $(window).on('scroll', function() {
     $('.free__woman').addClass('active');
   }
 }); 
+
 
