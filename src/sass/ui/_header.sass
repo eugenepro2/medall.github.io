@@ -105,12 +105,12 @@
 					height: 68px
 				&:not(:last-child)
 					margin-right: 8px
-				@for $i from 1 through 5
-					.icon-section-#{$i}
-						+s('section-#{$i}')
-						margin-right: 25px      
-						+r($desktop)
-							margin-right: 17px
+				.icon
+					font-size: 40px
+					margin-right: 25px
+					font-weight: 600  
+					+r($desktop)
+						margin-right: 17px
 				a
 					display: flex
 					align-items: center

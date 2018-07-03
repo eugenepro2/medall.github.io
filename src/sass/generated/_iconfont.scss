@@ -27,8 +27,13 @@ $icon-quote: "\EA0F";
 $icon-response-1: "\EA10";
 $icon-response-2: "\EA11";
 $icon-review: "\EA12";
-$icon-telegram: "\EA13";
-$icon-viber: "\EA14";
+$icon-section-1: "\EA13";
+$icon-section-2: "\EA14";
+$icon-section-3: "\EA15";
+$icon-section-4: "\EA16";
+$icon-section-5: "\EA17";
+$icon-telegram: "\EA18";
+$icon-viber: "\EA19";
 
 
 %icon {
@@ -65,5 +70,10 @@ $icon-viber: "\EA14";
 .icon-response-1:before { content: $icon-response-1; }
 .icon-response-2:before { content: $icon-response-2; }
 .icon-review:before { content: $icon-review; }
+.icon-section-1:before { content: $icon-section-1; }
+.icon-section-2:before { content: $icon-section-2; }
+.icon-section-3:before { content: $icon-section-3; }
+.icon-section-4:before { content: $icon-section-4; }
+.icon-section-5:before { content: $icon-section-5; }
 .icon-telegram:before { content: $icon-telegram; }
 .icon-viber:before { content: $icon-viber; }
