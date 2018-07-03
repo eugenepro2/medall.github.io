@@ -119,3 +119,13 @@ $(window).on('scroll', function() {
 }); 
 
 
+
+//Рандом 404
+let n = randomInteger(1, 6);
+$('.notfound__image img').attr('src', `img/404/${n}.png`);
+
+function randomInteger(min, max) {
+  var rand = min + Math.random() * (max + 1 - min);
+  rand = Math.floor(rand);
+  return rand;
+}

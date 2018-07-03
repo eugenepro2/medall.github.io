@@ -5,13 +5,14 @@ bodyClass: notfound
 extends layouts/_layout
 block content
   section.notfound
-    .logo
+    a(href="index.html").logo
       img(src="img/logo-white.png", alt="")
     .notfound__image
-      img(src="img/404/1.png", alt="")
+      img(src="", alt="")
     .notfound__block
       p Только в <b>сентябре</b> Smas - лифтинг со скидкой
         span 15%
-      a(href="#") Подробнее
+      a.btn.btn-primary(href="#") 
+        span Подробнее
     .notfound__bottom
       p Уупс, к сожалению этой страницы не существует...
