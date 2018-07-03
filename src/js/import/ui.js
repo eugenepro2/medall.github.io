@@ -49,11 +49,13 @@ $(window).on('resize scroll', function() {
 
 //Плавный скролл при загрузке страницы
 setTimeout(function() {
-  let top = $(location.hash).offset().top;
+  if (location.href.indexOf('#') !== -1) {
+    let top = $(location.hash).offset().top;
 
-  $('html, body').animate({
-    scrollTop: top
-  }, 1000);  
+    $('html, body').animate({
+      scrollTop: top
+    }, 1000);  
+  }
 }, 1500);
 
 

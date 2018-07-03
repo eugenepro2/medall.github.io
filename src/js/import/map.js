@@ -22,14 +22,14 @@ ymaps.ready(function()
   if ($('body').hasClass('style-2')) {
     markerOptions = {
       iconLayout: 'default#image',
-      iconImageHref: 'img/marker-2.png',
+      iconImageHref: '../img/marker-2.png',
       iconImageSize: [81, 76],
       iconImageOffset: [-3, -42]
     };  
   } else if($('body').hasClass('style-1')) {
     markerOptions = {
       iconLayout: 'default#image',
-      iconImageHref: 'img/marker-1.png',
+      iconImageHref: '../img/marker-1.png',
       iconImageSize: [81, 76],
       iconImageOffset: [-3, -42]
     };  
