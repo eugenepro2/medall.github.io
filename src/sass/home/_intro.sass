@@ -14,6 +14,8 @@
 		color: $white
 		position: absolute
 		bottom: 70px
+		+r(1200)
+			left: 200px
 		+r($tablet)
 			margin-left: 0
 			position: static
@@ -60,16 +62,14 @@
 				font-size: 16.5px
 	&__form
 		position: absolute
-		top: 0
+		bottom: 0
 		width: 100%
 		z-index: 10
 		&__block
 			background: $white
 			padding: 45px 60px
-			margin-top: 50px
 			+r($desktop)
 				padding: 30px 40px
-				margin-top: 14px
 			form
 				input
 					color: #000000
@@ -93,6 +93,8 @@
 					+r($desktop)
 						font-size: 12.5px
 						margin-top: 10px
+						br
+							display: none
 				.btn
 
 .style-2

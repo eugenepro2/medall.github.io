@@ -5,6 +5,7 @@ import './import/dotted';
 import './import/kind';
 import './import/form';
 import './import/modal';
+import './import/doctors';
 
 
 

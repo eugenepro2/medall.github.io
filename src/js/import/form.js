@@ -11,7 +11,7 @@ function ajaxMail($form) {
     url: $form.attr('action'),
     data: $form.serialize()
   }).done(function() {
-    $('.intro__form').height($('.intro__form').height());
+    $('.intro__form__block').height($('.intro__form__block').height());
     $('.free').height($('.free').height());
     $('.subscribe').height($('.subscribe').height());
     $form.fadeOut(500); 
