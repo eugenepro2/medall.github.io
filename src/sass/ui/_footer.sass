@@ -3,6 +3,7 @@
     background: rgba($grey, 0.9)
     padding-top: 70px
     padding-bottom: 120px
+    overflow: hidden
     +r($desktop)
       padding-top: 50px
     +r($tablet)
@@ -22,18 +23,26 @@
   &__menu
     flex-wrap: wrap
     width: 100%
+    +r($tablet)
+      margin-bottom: 30px  
     &:first-child
       width: 80%
+      +r($tablet)
+        width: 100%
       ul
         width: 100%
     &__row
       display: flex
+      +r($tablet)
+        flex-direction: column
       &:first-child
         margin-bottom: 40px
         justify-content: space-between
       &:last-child
         .footer__menu
           width: 28.7%
+          +r($tablet)
+            width: 100%
     h2
       height: 40px
       width: 100%

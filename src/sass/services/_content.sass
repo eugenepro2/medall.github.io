@@ -125,7 +125,7 @@
 						+rmin(1920)
 							font-size: 21px
 		&__price
-			margin: 100px 0
+			margin: 100px 100px
 			width: 100%
 			+rmin(1920)
 				margin: 150px 0
@@ -142,39 +142,22 @@
 				+rmin(1920)
 					font-size: 35.5px
 					margin-bottom: 55px
+			&__heading
+				background: #50b7e7
+				padding: 15px 20px
+				h4
+					font-size: 17px
+					text-transform: uppercase
+					color: $white
 			&__item
 				display: flex
 				justify-content: space-between
 				align-items: center
-				height: 35px
-				width: 100vw
-				position: relative
-				left: 50%
-				right: 50%
-				margin-left: -50vw
-				margin-right: -50vw
-				padding: 0 130px
-				+rmin(1920)
-					height: 50px
-					padding: 0 190px
-				+r($tablet)
-					padding: 0 20px
-					height: 60px
-				+r($mobile)
-					height: 100%
-					padding: 10px 20px
+				padding: 20px
 				&:nth-of-type(even)
-					height: 50px
 					background-color: #f8f8f8
-					+rmin(1920)
-						height: 75px
-					+r($tablet)
-						height: 50px
-					+r($mobile)
-						height: 100%
-
 				p
-					font-size: 13.5px
+					font-size: 14px
 					font-weight: 300
 					line-height: 2.07
 					text-align: left
@@ -184,7 +167,7 @@
 					+r($mobile)
 						padding-right: 10px
 				span
-					font-size: 16.5px
+					font-size: 17px
 					color: $black-four
 					font-weight: 500
 					+rmin(1920)
