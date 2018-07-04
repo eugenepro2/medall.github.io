@@ -4,7 +4,7 @@ $('[data-pop]').on('click', function() {
 });
 
 
-$('.doctors__block .btn').click(function(e) { 
+$('.doctors__block .btn, .tabs__doctors .btn').click(function(e) { 
   e.preventDefault();
   openModal(this);
 });
