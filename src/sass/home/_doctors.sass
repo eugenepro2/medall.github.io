@@ -7,10 +7,15 @@
 		padding: 70px 0
 	+r($mobile)
 		padding: 50px 0
+	+r($tablet)
+		.row
+			flex-direction: column
 	a
 		text-decoration: none
 	&__block
 		width: 33.33%
+		+r($tablet)
+			width: 100%
 	article
 		+tr
 		cursor: pointer

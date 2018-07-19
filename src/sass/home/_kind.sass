@@ -20,6 +20,12 @@
 			height: 620px
 		+r($mobile)
 			display: none
+		&:before
+			content: ''
+			+coverdiv
+			// background: rgba($black, 0.5)
+			background-image: linear-gradient(94deg, rgba($blue2, 0.5), rgba($aqua, 0.5) 97%)
+			z-index: 10
 		div
 			width: 75%
 		h1
@@ -35,7 +41,7 @@
 				font-size: 70px
 				margin-bottom: 50px
 		ul
-			width: 70%
+			width: 100%
 			display: inline-block
 			position: relative
 			z-index: 10
@@ -102,7 +108,7 @@
 		+r($desktop)
 			height: 300px
 		+r($tablet)
-			height: 360px
+			height: 260px
 			width: calc(50% - 10px)
 			margin-bottom: 10px
 		+r($mobile)
@@ -140,8 +146,6 @@
 		&:last-child
 			width: calc(25% - 15px)
 			+r($tablet)
-				width: calc(50% - 10px)
-			+r($mobile)
 				width: 100%
 
 	.tabs
@@ -186,22 +190,26 @@
 			a
 				text-decoration: none
 				display: flex
-				justify-content: space-between
-				align-items: flex-end
 				&:not(:first-child)
-					margin-top: 25px
-				&:not(:last-child)
-					border-bottom: solid 1px #e1e1e1
+					margin-top: 60px
 				&:hover
 					p
 						color: $blue
+			&__block
+				&__left
+					background: url('../img/dotted-line-dot.gif') 0 100% repeat-x
+					width: 85%
+				&__right
+					display: flex
+					align-items: flex-end
 			p
 				font-size: 22px
 				line-height: 1.27
 				color: #3b3b3b
 				margin-bottom: 40px
 				font-weight: 400
-				display: inline-block
+				display: inline
+
 				+tr
 				+r($desktop)
 					font-size: 16.5px
@@ -217,13 +225,10 @@
 				float: right
 				font-size: 22px
 				font-weight: bold
-				display: block
 				color: $black-four
-				margin-bottom: 40px
 				white-space: nowrap
 				+r($desktop)
-					font-size: 16.5px
-					margin-bottom: 30px
+					font-size: 15.5px
 			hr
 				border: solid 1px #e1e1e1
 				opacity: 0.9
@@ -371,7 +376,16 @@
 				display: flex
 				width: 100%
 				justify-content: space-between
+				+r($mobile)
+					flex-direction: column
 				h1
 					font-size: 24px
 					bottom: 40px
 					left: 30px
+					+r($tablet)
+						left: 10px
+
+.style-2
+	.kind
+		&__big:before
+			background-image: linear-gradient(94deg, rgba($style1, 0.5), rgba($style2, 0.5) 97%)

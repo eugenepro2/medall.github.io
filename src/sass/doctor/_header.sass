@@ -1,27 +1,40 @@
 .doctor__header
   background: #e6e7e9
+  position: relative
   .row
     margin: 0
   &__image
+    width: 50%
     +r($mobile)
       position: relative
       left: 50%
       transform: translateX(-50%)
-      width: 65%
-    img
       width: 100%
+    img
+      width: 600px
       height: 100%
       object-fit: cover
+      position: absolute
+      left: 0
+      top: 0
       +rmin(1920)
         width: initial
+      +r($tablet)
+        width: 100%
+        position: static
   &__block
     margin: 65px 0
     padding-left: 80px
+    position: relative
+    z-index: 10
     +rmin(1920)
       margin: 100px 0
+    +r($tablet)
+      width: 50%
     +r($mobile)
       padding-left: 15px
       margin: 25px 0
+      width: 100%
     h1
       font-size: 24px
       color: #3f3f3f

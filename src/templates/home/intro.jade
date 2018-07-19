@@ -24,10 +24,20 @@ section.intro.swiper-container
       .row
         .col-md-4.col-md-offset-8.hidden-sm.hidden-xs
           .intro__form__block
-            form
+            form.form
               h3 Запишитесь на бесплатную*<br> консультацию
-              input#phone(type="tel", name="phone" placeholder="Ваш контактный телефон") 
-              input(type="text", name="name" placeholder="Ваше имя") 
+              .form-input.form-input-phone
+                input(type="tel", name="phone" placeholder="Ваш контактный телефон")
+                .tooltip.tooltip-input
+                  p Поле "Телефон" не заполнено
+                .tooltip.tooltip-phone
+                  p Поле "Телефон" введено не корректно
+              .form-input.form-input-text
+                input(type="text", name="name" placeholder="Ваше имя" pattern="^[а-яА-ЯеЁa-zA-Z]+$") 
+                .tooltip.tooltip-input
+                  p Поле "Ваше имя" не заполнено
+                .tooltip.tooltip-text
+                  p Используйте только буквы.
               button.btn.btn-primary(type="submit")
                 i.icon.icon-mail
                 span Отправить запрос

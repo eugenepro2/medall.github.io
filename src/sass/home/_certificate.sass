@@ -4,10 +4,13 @@
     padding-top: 100px
   +r($tablet)
     padding-top: 70px
+    .container-fluid
+      padding: 0 65px
   +r($mobile)
     padding: 50px 0
     overflow: hidden
     position: relative
+
   .col-xs-12
     position: relative
   &__row
@@ -42,6 +45,9 @@
         height: 200px
         width: initial
   .owl-stage-outer
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
     +r($mobile)
       overflow: visible
   &__prev, &__next
@@ -51,15 +57,21 @@
     width: 55px
     height: 55px
     background: $white
+    cursor: pointer
     +center
     z-index: 10
     i
       font-size: 20px
       color: #8c9eb3
   &__prev
-    left: 15px
+    left: -55px
+    +r($tablet)
+      left: -55px
     i
       transform: rotate(180deg)
       display: inline-block
   &__next
-    right: 15px
+    right: -55px
+    +r($tablet)
+      right: -55px
+

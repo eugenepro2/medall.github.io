@@ -118,8 +118,24 @@
           <div class="row">
             <div class="col-md-4 col-md-offset-8 hidden-sm hidden-xs">
               <div class="intro__form__block">
-                <form>
-                  <h3>Запишитесь на бесплатную*<br> консультацию</h3><input id="phone" type="tel" name="phone" placeholder="Ваш контактный телефон"><input type="text" name="name" placeholder="Ваше имя"><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
+                <form class="form">
+                  <h3>Запишитесь на бесплатную*<br> консультацию</h3>
+                  <div class="form-input form-input-phone"><input type="tel" name="phone" placeholder="Ваш контактный телефон">
+                    <div class="tooltip tooltip-input">
+                      <p>Поле "Телефон" не заполнено</p>
+                    </div>
+                    <div class="tooltip tooltip-phone">
+                      <p>Поле "Телефон" введено не корректно</p>
+                    </div>
+                  </div>
+                  <div class="form-input form-input-text"><input type="text" name="name" placeholder="Ваше имя" pattern="^[а-яА-ЯеЁa-zA-Z]+$">
+                    <div class="tooltip tooltip-input">
+                      <p>Поле "Ваше имя" не заполнено</p>
+                    </div>
+                    <div class="tooltip tooltip-text">
+                      <p>Используйте только буквы.</p>
+                    </div>
+                  </div><button type="submit" class="btn btn-primary"><i class="icon icon-mail"></i><span>Отправить запрос</span></button>
                   <p>* Консультация является бесплатной при согласии<br> пациента продолжить лечение в клинике.</p>
                 </form>
                 <div class="response">
@@ -260,15 +276,35 @@
               </ul>
               <div class="tabs__content tabs__price active">
                 <a href="#" class="tabs__price__block">
-                  <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) <i></i></p><span>300 000 р.</span></a>
+                  <div class="tabs__price__block__left">
+                    <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) </p>
+                  </div>
+                  <div class="tabs__price__block__right"><span>300 000 р.</span></div>
+                </a>
                 <a href="#" class="tabs__price__block">
-                  <p>Повторная хирургическая коррекция молочных желез<br> эндопротезированием (включая импланты) <i></i></p><span>300 000 р.</span></a>
+                  <div class="tabs__price__block__left">
+                    <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) </p>
+                  </div>
+                  <div class="tabs__price__block__right"><span>300 000 р.</span></div>
+                </a>
                 <a href="#" class="tabs__price__block">
-                  <p>Хирургическая коррекция птоза молочных желез с одномоментным<br> эндопротезированием с имплантами<i></i></p><span>300 000 р.</span></a>
+                  <div class="tabs__price__block__left">
+                    <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) </p>
+                  </div>
+                  <div class="tabs__price__block__right"><span>300 000 р.</span></div>
+                </a>
                 <a href="#" class="tabs__price__block">
-                  <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) <i></i></p><span>300 000 р.</span></a>
+                  <div class="tabs__price__block__left">
+                    <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) </p>
+                  </div>
+                  <div class="tabs__price__block__right"><span>300 000 р.</span></div>
+                </a>
                 <a href="#" class="tabs__price__block">
-                  <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) <i></i></p><span>300 000 р.</span></a>
+                  <div class="tabs__price__block__left">
+                    <p>Увеличение молочных желез эндопротезированием<br> (включая импланты) </p>
+                  </div>
+                  <div class="tabs__price__block__right"><span>300 000 р.</span></div>
+                </a>
               </div>
               <div class="tabs__content tabs__article">
                 <a href="#">
@@ -795,7 +831,7 @@
                         </ul>
                       </article>
                     </div>
-                    <div data-img="img/kind/2.jpg" data-id="2" class="kind__click kind__small">
+                    <div data-img="img/kind/2.jpg" data-id="2" data-href="doctor.html" class="kind__click kind__small">
                       <div class="kind__small__new glitch glitch--style-3 glitch--vertical">
                         <div class="glitch__img"></div>
                         <div class="glitch__img"></div>
@@ -819,7 +855,7 @@
                         </ul>
                       </article>
                     </div>
-                    <div data-img="img/kind/3.jpg" data-id="3" class="kind__click kind__small">
+                    <div data-img="img/kind/3.jpg" data-id="3" data-href="" class="kind__click kind__small">
                       <div class="kind__small__new glitch glitch--style-3 glitch--vertical">
                         <div class="glitch__img"></div>
                         <div class="glitch__img"></div>
@@ -843,7 +879,7 @@
                         </ul>
                       </article>
                     </div>
-                    <div data-img="img/kind/4.jpg" data-id="4" class="kind__click kind__small">
+                    <div data-img="img/kind/4.jpg" data-id="4" data-href="" class="kind__click kind__small">
                       <div class="kind__small__new glitch glitch--style-3 glitch--vertical">
                         <div class="glitch__img"></div>
                         <div class="glitch__img"></div>
@@ -860,7 +896,7 @@
                         <h1>Интимная<br> пластика </h1>
                       </article>
                     </div>
-                    <div data-img="img/kind/5.jpg" data-id="5" class="kind__click kind__small">
+                    <div data-img="img/kind/5.jpg" data-id="5" data-href="" class="kind__click kind__small">
                       <div class="kind__small__new glitch glitch--style-3 glitch--vertical">
                         <div class="glitch__img"></div>
                         <div class="glitch__img"></div>
@@ -877,7 +913,7 @@
                         <h1>Лазерное<br> удаление</h1>
                       </article>
                     </div>
-                    <div data-img="img/kind/5.jpg" data-id="5" class="kind__click kind__small">
+                    <div data-img="img/kind/5.jpg" data-id="5" data-href="" class="kind__click kind__small">
                       <div class="kind__small__new glitch glitch--style-3 glitch--vertical">
                         <div class="glitch__img"></div>
                         <div class="glitch__img"></div>
@@ -1105,17 +1141,18 @@
       <div class="modal__block">
         <div class="modal__block__close"><i class="icon icon-close"></i></div>
         <form>
-          <h2>Запись на консультацию</h2><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
-        <div class="response">
+          <h2>Запись на консультацию</h2><input id="date" type="hidden" name="date"><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
+        <div
+          class="response">
           <p>Спасибо! Ваше сообщение успешно отрпавлено.</p>
-        </div>
-        <div class="error">
-          <p>Произошла ошибка, пожалуйста повторите позже.</p>
-        </div>
-        <div class="policy">
-          <p>Отправляя эту форму, вы соглашаетесь <br>на&nbsp; <a href="#">обработку персональных данных </a></p>
-        </div>
       </div>
+      <div class="error">
+        <p>Произошла ошибка, пожалуйста повторите позже.</p>
+      </div>
+      <div class="policy">
+        <p>Отправляя эту форму, вы соглашаетесь <br>на&nbsp; <a href="#">обработку персональных данных </a></p>
+      </div>
+    </div>
     </div>
     <div id="modal-callback" class="modal">
       <div class="modal__block">

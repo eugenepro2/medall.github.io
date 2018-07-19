@@ -39,10 +39,16 @@
     box-sizing: border-box
     width: 100vw
     +r($tablet)
-      padding: 20 40px
-    +r($mobile)
-      padding: 20 20px
+      padding: 20px
+      margin-left: initial
+      margin-right: initial
+      width: initial
+      left: initial
+      right: initial
+      position: static
       flex-direction: column
+    +r($mobile)
+      padding: 10px 20px
     &__image
       width: 150px
       height: 150px
@@ -82,8 +88,9 @@
         bottom: 0
         transform: rotate(180deg) scale(-1, 1)
       p
-        font-size: 14px
+        font-size: 16px
         font-weight: 300
+        line-height: 1.4
         color: #3f3f3f
         position: relative
         z-index: 10
@@ -126,6 +133,8 @@
 .datepicker--cell.-selected-
   background-color: #5eb7d7
   border-radius: 50%
+.datepicker--cell.-disabled-
+  pointer-events: none
 
 
 .style-2

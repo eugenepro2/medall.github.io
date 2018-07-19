@@ -95,7 +95,7 @@
             <h1>Филипп Анатольевич Романчишен</h1>
             <p>Пластический хирург, к. м.н.</p>
             <div class="doctor__header__info">
-              <p>Стаж: <b>15 лет</b></p>
+              <p>Стаж: <b class="counter" data-count="10">0</b> лет</p>
               <p>Проведенных операций: <b>156</b></p>
             </div>
           </div>
@@ -129,7 +129,7 @@
           <div class="col-md-4 col-xs-12">
             <div class="calendar">
               <h3>Расписание врача</h3>
-              <div class="datepicker-here"></div><a href="#modal-form" data-pop class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></a></div>
+              <div data-array="2018-07-18,2018-07-15" class="datepicker-here"></div><a href="#modal-form" data-pop class="btn btn-primary"><i class="icon icon-edit"></i><span>Запиcь на консультацию</span></a></div>
           </div>
           <div class="col-xs-12">
             <div class="doctor__info__quote">
@@ -661,17 +661,18 @@
       <div class="modal__block">
         <div class="modal__block__close"><i class="icon icon-close"></i></div>
         <form>
-          <h2>Запись на консультацию</h2><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
-        <div class="response">
+          <h2>Запись на консультацию</h2><input id="date" type="hidden" name="date"><input type="text" placeholder="Имя"><input id="phone" type="tel" placeholder="Телефон"><button type="submit" class="btn btn-secondary"> <span>Отправить</span></button></form>
+        <div
+          class="response">
           <p>Спасибо! Ваше сообщение успешно отрпавлено.</p>
-        </div>
-        <div class="error">
-          <p>Произошла ошибка, пожалуйста повторите позже.</p>
-        </div>
-        <div class="policy">
-          <p>Отправляя эту форму, вы соглашаетесь <br>на&nbsp; <a href="#">обработку персональных данных </a></p>
-        </div>
       </div>
+      <div class="error">
+        <p>Произошла ошибка, пожалуйста повторите позже.</p>
+      </div>
+      <div class="policy">
+        <p>Отправляя эту форму, вы соглашаетесь <br>на&nbsp; <a href="#">обработку персональных данных </a></p>
+      </div>
+    </div>
     </div>
     <div id="modal-callback" class="modal">
       <div class="modal__block">

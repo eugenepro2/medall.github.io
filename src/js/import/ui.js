@@ -1,8 +1,7 @@
 import $ from 'jquery';
 import '@fancyapps/fancybox';
 import Slideout from 'slideout';
-import 'air-datepicker';
-import Inputmask from 'inputmask';
+import Inputmask from 'inputmask/dist/inputmask/jquery.inputmask';
 
 
 //Если элемент в ViewPort
@@ -16,19 +15,36 @@ $.fn.isInViewport = function() {
   return elementBottom > viewportTop && elementTop < viewportBottom;
 };
 
+if ($('.doctor__header').is(':visible')) {
+  $('.counter').each(function() {
+    var $this = $(this),
+      countTo = $this.attr('data-count');
+    $({ countNum: $this.text()}).animate({
+      countNum: countTo
+    },
+    {
+      duration: 2000,
+      easing:'linear',
+      step: function() {
+        $this.text(Math.floor(this.countNum));
+      },
+      complete: function() {
+        $this.text(this.countNum);
+      }
+    }); 
+  });  
+}
+
 $(window).on('resize scroll', function() {
   if ($('.home-doctor').is(':visible')) {
     if ($('.home-doctor').isInViewport()) {
       $('.counter').each(function() {
         var $this = $(this),
           countTo = $this.attr('data-count');
-      
         $({ countNum: $this.text()}).animate({
           countNum: countTo
         },
-    
         {
-    
           duration: 2000,
           easing:'linear',
           step: function() {
@@ -37,9 +53,7 @@ $(window).on('resize scroll', function() {
           complete: function() {
             $this.text(this.countNum);
           }
-    
         }); 
-    
       });  
     }
   }
@@ -59,19 +73,6 @@ setTimeout(function() {
 }, 1500);
 
 
-
-
-
-
-//Маска телефона
-if ($('#phone').length) {
-  Inputmask({'mask': '+7(999) 999 99 99'}).mask(document.getElementById('phone'));  
-}
-
-//Распасание в виде календаря
-$('.datepicker-here').datepicker({
-  inline: true
-});
 
 //Tabs
 $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
@@ -110,11 +111,13 @@ if ($('.tabs__decision__articles').is(':visible')) {
 
 //Аницаия блока с девушкой
 $(window).on('scroll', function() {
-  let scroll = $(window).scrollTop();
-  let blockFree = $('.free').offset().top;
-  if (scroll >= (blockFree - 500)) {
-    $('.free__back').addClass('active');
-    $('.free__woman').addClass('active');
+  if ($('.fre').is(':visible')) {
+    let scroll = $(window).scrollTop();
+    let blockFree = $('.free').offset().top;
+    if (scroll >= (blockFree - 500)) {
+      $('.free__back').addClass('active');
+      $('.free__woman').addClass('active');
+    }
   }
 }); 
 

@@ -89,11 +89,21 @@
 						font-size: 16px
 						font-weight: bold
 						color: #a7a8ae
+						position: relative
+						display: block
 						+tr
 						+rmin(1920)
 							font-size: 24px
 						+r($mobile)
 							color: $white
+						&:first-child
+							margin-right: 65px
+							&:before
+								content: '/'
+								position: absolute
+								right: -35px
+								top: -1px
+									
 						&.active
 							color: $black
 							+r($mobile)
@@ -110,7 +120,8 @@
 						+r($mobile)
 							display: none
 				p
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					font-weight: 300
 					color: #3f3f3f
 					margin-bottom: 20px
@@ -119,18 +130,20 @@
 				ul 
 					margin-bottom: 20px
 					li
-						font-size: 14px
+						font-size: 16px
+						line-height: 1.4
 						font-weight: 300
 						color: #3f3f3f
 						+rmin(1920)
 							font-size: 21px
 		&__price
-			margin: 100px 100px
+			margin: 100px auto
+			max-width: 1280px
 			width: 100%
 			+rmin(1920)
-				margin: 150px 0
+				margin: 150px auto
 			+r($tablet)
-				margin: 20px 0
+				margin: 20px auto
 			+r($mobile)
 				height: 100%
 			h3
@@ -157,7 +170,8 @@
 				&:nth-of-type(even)
 					background-color: #f8f8f8
 				p
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					font-weight: 300
 					line-height: 2.07
 					text-align: left
@@ -173,7 +187,8 @@
 					+rmin(1920)
 						font-size: 24.5px
 					+r($tablet)
-						font-size: 14px
+						font-size: 16px
+						line-height: 1.4
 						white-space: nowrap
 			hr
 				border: solid 1px #e1e1e1
@@ -191,7 +206,8 @@
 				+rmin(1920)
 					padding-right: 130px
 				p
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					line-height: 1.36
 					color: #9fa0a6
 					font-weight: normal
@@ -204,7 +220,8 @@
 					width: 165px
 					height: 37px
 					+center
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					color: $blue
 					border: 1px solid $blue
 					border-radius: 4px
@@ -215,8 +232,7 @@
 						width: 250px
 						height: 60px
 		&__before
-			+r($mobile)
-				width: 100%
+			width: 100%
 			.heading h2
 				margin-bottom: 30px
 			&__primary
@@ -258,6 +274,11 @@
 				flex-direction: column-reverse
 				+rmin(1920)
 					margin-top: 25px
+				.tabs__content
+					+r($tablet)
+						display: flex
+						flex-direction: column
+						align-items: center
 				.tabs__caption
 					margin-top: 20px
 					margin-left: 23px
@@ -292,19 +313,28 @@
 				&__block
 					display: flex
 					justify-content: space-between
+					+r($tablet)
+						position: relative
+						top: 40px
+						display: none
 					+r($mobile)
 						flex-direction: column
+						top: 0
 					img:nth-of-type(1)
 						margin-right: 20px
 					img
 						width: 100%
-						height: 100%
 						object-fit: cover
 						+r($tablet)
 							width: 50%
 						+r($mobile)
 							width: 100%
 							margin-bottom: 10px
+					&__mobile
+						display: none
+						position: relative
+						+r($tablet)
+							display: flex
 			&__about
 				flex: 1
 				margin-left: 30px
@@ -325,7 +355,8 @@
 						margin-bottom: 5px
 						line-height: 1
 				p
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					font-weight: 300
 					color: #3f3f3f
 					+rmin(1920)
@@ -337,6 +368,7 @@
 					bottom: 55px
 					position: absolute
 					right: 0
+					display: none
 					+r($mobile)
 						position: static
 						margin-top: 10px
@@ -357,7 +389,8 @@
 					+rmin(1920)
 						font-size: 25.5px
 				p
-					font-size: 14px
+					font-size: 16px
+					line-height: 1.4
 					font-weight: 300
 					color: #3f3f3f
 					padding: 70px 120px
@@ -427,21 +460,12 @@
 					object-fit: cover
 			&__content
 				flex: 1
-				p
-					font-size: 13px
-					font-weight: 300
-					color: #3f3f3f
-					margin-bottom: 10px
-					+rmin(1920)
-						font-size: 19.5px
-						margin-bottom: 15px
-					+r($tablet)
-						text-align: center
-				span 
-					font-size: 11px
-					width: 35%
+				position: relative
+				padding-top: 20px
+				h3 
+					font-size: 22px
 					display: block
-					margin-bottom: 5px
+					margin-bottom: 10px
 					color: #3f3f3f
 					+rmin(1920)
 						font-size: 16.5px
@@ -449,11 +473,24 @@
 						text-align: center
 						width: 100%
 						margin-bottom: 15px
+				p
+					font-size: 14px
+					font-weight: 300
+					color: #3f3f3f
+					min-height: 160px
+					margin-bottom: 10px
+					+rmin(1920)
+						font-size: 19.5px
+						margin-bottom: 15px
+					+r($tablet)
+						text-align: center
 				.btn
 					width: 185px
 					height: 30px
-					float: right
 					text-align: center
+					position: absolute
+					bottom: 0
+					right: 0
 					+rmin(1920)
 						width: 280px
 						height: 45px
@@ -474,11 +511,13 @@
 						color: $white
 						+rmin(1920)
 							font-size: 13.5px
+		a.row
+			text-decoration: none
+			color: $black-four
 		&__decision
 			&__image
 				width: 415px
-				height: 240px
-				background: $black
+				height: 300px
 				margin-right: 30px
 				margin-bottom: 30px
 				+rmin(1920)
@@ -492,6 +531,10 @@
 					width: 100%
 					height: 300px
 					margin-right: 0
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
 			&__text
 				flex: 1
 				h3

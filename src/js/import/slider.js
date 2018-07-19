@@ -5,6 +5,9 @@ import Swiper from 'swiper';
 
 let introSlider = new Swiper('.swiper-container', {
   speed: 400,
+  autoplay: {
+    delay: 5000,
+  },
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -15,7 +18,6 @@ let introSlider = new Swiper('.swiper-container', {
 let certificate = $('.certificate-slider');
 certificate.owlCarousel({
   margin: 15,
-  loop: true,
   autoWidth: true,
   items: 4,
   responsive : {
